@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio profesional de Jairo Wladimir Ruiz Saenz - Desarrollador Full-Stack especializado en TypeScript, microservicios y aplicaciones CRUD">
+    <meta name="keywords" content="Jairo Ruiz, desarrollador, full-stack, TypeScript, JavaScript, Python, Power BI, ESPE, Ecuador, portafolio">
+    <meta name="author" content="Jairo Wladimir Ruiz Saenz">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="images/logodejairo3.png">
+    <title>Jairo Wladimir Ruiz Saenz - Desarrollador Full-Stack | Portafolio</title>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles-pro.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <img src="images/logodejairo3.png" alt="Logo Jairo Ruiz" style="max-width: 150px; height: auto; margin-bottom: 20px;">
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+            <p data-translate="loading-message">Cargando portafolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#hero">
+                <img src="images/logodejairo3.png" alt="Logo" style="height: 50px; width: auto;">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#hero">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#about">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#experience">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#skills">Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#certifications">Certificaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <button id="language-toggle" class="btn btn-outline-primary me-2" type="button" aria-label="Cambiar idioma">
+                        <i data-lucide="languages"></i>
+                        <span class="ms-2 fw-bold">ES</span>
+                    </button>
+                    <button id="theme-toggle" type="button" class="btn btn-outline-primary me-2 d-flex align-items-center" aria-pressed="false" aria-label="Toggle theme">
+                        <i data-lucide="sun" aria-hidden="true"></i>
+                    </button>
+                    <a href="https://www.canva.com/design/DAGbofQZ_s4/vY3F9UKDrIYLt7UIsxihvg/view?utm_content=DAGbofQZ_s4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha13e79e6b8" target="_blank" class="btn btn-primary">
+                        <i data-lucide="download" class="me-1"></i>
+                        <span>CV</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Sidebar Navigation -->
+    <div class="offcanvas offcanvas-start bg-light" tabindex="-1" id="mobileSidebar">
+        <div class="offcanvas-header border-bottom">
+            <div class="d-flex align-items-center">
+                <img src="images/logodejairo3.png" alt="Logo" style="height: 40px; width: auto;" class="me-3">
+            </div>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        
+        <div class="offcanvas-body">
+            <nav>
+                <div class="mb-4">
+                    <div class="nav-item mb-2">
+                        <a class="nav-link d-flex align-items-center text-dark py-2" href="#hero" data-bs-dismiss="offcanvas">
+                            <i data-lucide="home" class="me-3"></i>Inicio
+                        </a>
+                    </div>
+                    <div class="nav-item mb-2">
+                        <a class="nav-link d-flex align-items-center text-dark py-2" href="#about" data-bs-dismiss="offcanvas">
+                            <i data-lucide="user" class="me-3"></i>Sobre Mí
+                        </a>
+                    </div>
+                    <div class="nav-item mb-2">
+                        <a class="nav-link d-flex align-items-center text-dark py-2" href="#experience" data-bs-dismiss="offcanvas">
+                            <i data-lucide="briefcase" class="me-3"></i>Experiencia
+                        </a>
+                    </div>
+                    <div class="nav-item mb-2">
+                        <a class="nav-link d-flex align-items-center text-dark py-2" href="#projects" data-bs-dismiss="offcanvas">
+                            <i data-lucide="code" class="me-3"></i>Proyectos
+                        </a>
+                    </div>
+                    <div class="nav-item mb-2">
+                        <a class="nav-link d-flex align-items-center text-dark py-2" href="#skills" data-bs-dismiss="offcanvas">
+                            <i data-lucide="settings" class="me-3"></i>Habilidades
+                        </a>
+                    </div>
+                    <div class="nav-item mb-2">
+                        <a class="nav-link d-flex align-items-center text-dark py-2" href="#certifications" data-bs-dismiss="offcanvas">
+                            <i data-lucide="award" class="me-3"></i>Certificaciones
+                        </a>
+                    </div>
+                    <div class="nav-item mb-2">
+                        <a class="nav-link d-flex align-items-center text-dark py-2" href="#contact" data-bs-dismiss="offcanvas">
+                            <i data-lucide="mail" class="me-3"></i>Contacto
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            
+            <div class="mt-auto">
+                <div class="mb-3">
+                    <button id="mobile-language-toggle" type="button" class="btn btn-outline-primary w-100 mb-2" aria-label="Cambiar idioma">
+                        <i data-lucide="languages"></i>
+                        <span class="ms-2 fw-bold">ES</span>
+                    </button>
+                    <button id="mobileThemeToggle" type="button" class="btn btn-outline-primary w-100" aria-label="Toggle theme">
+                        <i data-lucide="sun" aria-hidden="true"></i>
+                    </button>
+                </div>
+                
+                <a href="https://www.canva.com/design/DAGbofQZ_s4/vY3F9UKDrIYLt7UIsxihvg/view?utm_content=DAGbofQZ_s4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha13e79e6b8" target="_blank" class="btn btn-primary w-100 mb-3">
+                    <i data-lucide="download" class="me-1"></i>
+                    <span>CV</span>
+                </a>
+                
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="https://github.com/Jairo977" target="_blank" class="btn btn-outline-secondary rounded-circle">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jairo-ruiz-9870932a4" target="_blank" class="btn btn-outline-secondary rounded-circle">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+                    <a href="https://wa.me/593960047635" target="_blank" class="btn btn-outline-secondary rounded-circle">
+                        <i data-lucide="message-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Overlay -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Hero Section with Parallax -->
+    <section id="hero" class="hero">
+        <div class="container position-relative" style="width: 100%; padding-top: 60px;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-10 col-xl-9">
+                    <div class="text-center">
+                        <img src="images/perfil1.jpg" alt="Jairo Wladimir Ruiz Saenz" class="hero-avatar">
+                        <h1 class="text-white mb-3" data-translate="hero-title">Jairo Wladimir Ruiz Saenz</h1>
+                        <p class="lead mb-3" data-translate="hero-subtitle">Desarrollador Full-Stack | Análisis de Datos</p>
+                        <p class="lead mb-4" style="font-size: 16px;" data-translate="hero-description">
+                            Especializado en TypeScript/JavaScript, Python, Power BI y microservicios. 
+                            Estudiante de Ingeniería en TI en ESPE con experiencia avanzada en desarrollo 
+                            y análisis de datos empresariales.
+                        </p>
+                        
+                        <div class="row justify-content-center mb-4">
+                            <div class="col-6 col-sm-auto">
+                                <div class="stat-card">
+                                    <h3 class="counter" data-target="11">0</h3>
+                                    <p data-translate="hero-repos">Repositorios</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-auto">
+                                <div class="stat-card">
+                                    <h3 class="counter" data-target="24">0</h3>
+                                    <p data-translate="hero-contributions">Contribuciones</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-sm-auto">
+                                <div class="stat-card">
+                                    <h3 class="counter" data-target="5">0</h3>
+                                    <p data-translate="hero-experience">Años Experiencia</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 mb-4 flex-wrap">
+                            <a href="#projects" class="btn btn-outline-light" style="color: white; border-color: rgba(255,255,255,0.5);">
+                                <i data-lucide="eye" class="me-2"></i>
+                                <span data-translate="hero-cta-projects">Ver Proyectos</span>
+                            </a>
+                            <a href="#contact" class="btn btn-primary">
+                                <i data-lucide="user-check" class="me-2"></i>
+                                <span data-translate="hero-cta-contact">Contactar</span>
+                            </a>
+                        </div>
+                        
+                        <div class="d-flex justify-content-center gap-2">
+                            <a href="https://github.com/Jairo977" target="_blank" class="btn btn-light" style="width: 50px; height: 50px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%;">
+                                <i data-lucide="github" style="font-size: 20px;"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jairo-ruiz-9870932a4" target="_blank" class="btn btn-light" style="width: 50px; height: 50px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%;">
+                                <i data-lucide="linkedin" style="font-size: 20px;"></i>
+                            </a>
+                            <a href="https://wa.me/593960047635" target="_blank" class="btn btn-light" style="width: 50px; height: 50px; padding: 0; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%;">
+                                <i data-lucide="message-circle" style="font-size: 20px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                    <div class="position-relative rounded-3 overflow-hidden shadow-lg mt-4 mx-auto" style="max-width: 350px;">
+                        <img src="images/perfil1.jpg" alt="Jairo Wladimir Ruiz Saenz" class="w-100 h-auto rounded-3" loading="lazy">
+                        
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <h2 class="display-4 fw-bold text-dark mb-4 position-relative">
+                        Sobre Mí
+                        <div class="position-absolute bottom-0 start-0 w-25 h-1 bg-primary rounded-pill"></div>
+                    </h2>
+                    <div class="mb-4">
+                        <p class="lead text-muted mb-3" data-translate="about-description1">
+                            Soy un desarrollador Full-Stack con especialización en análisis de datos, 
+                            egresado de Ingeniería en Tecnologías de la Información en la Universidad 
+                            de las Fuerzas Armadas ESPE.
+                        </p>
+                        <p class="lead text-muted mb-3" data-translate="about-description2">
+                            Mi pasión por el desarrollo tecnológico se combina con una sólida experiencia 
+                            en análisis de datos y visualización. Conocimiento avanzado en Python (98%) 
+                            y Power BI (98%), desarrollo aplicaciones escalables que transforman datos 
+                            en insights accionables.
+                        </p>
+                        <p class="lead text-muted mb-4" data-translate="about-description3">
+                            Mi enfoque combina fundamentos académicos sólidos con experiencia práctica 
+                            en tecnologías modernas. Especializado en TypeScript (90%), JavaScript (85%), 
+                            y arquitecturas de microservicios, siempre buscando soluciones eficientes 
+                            y escalables.
+                        </p>
+                        
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center gap-3 p-3 bg-light rounded-3 border">
+                                    <i data-lucide="code" class="text-primary fs-5"></i>
+                                    <span class="fw-medium text-dark">Full-Stack</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center gap-3 p-3 bg-light rounded-3 border">
+                                    <i data-lucide="bar-chart-3" class="text-primary fs-5"></i>
+                                    <span class="fw-medium text-dark">Data Analysis</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center gap-3 p-3 bg-light rounded-3 border">
+                                    <i data-lucide="network" class="text-primary fs-5"></i>
+                                    <span class="fw-medium text-dark">Microservices</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center gap-3 p-3 bg-light rounded-3 border">
+                                    <i data-lucide="shield-check" class="text-primary fs-5"></i>
+                                    <span class="fw-medium text-dark">Security</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-lg-8 text-center">
+                    <h2 class="display-4 fw-bold text-dark mb-4">Experiencia Profesional</h2>
+                    <p class="lead text-muted">
+                        Mi trayectoria profesional y académica en el desarrollo tecnológico.
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience-grid">
+                <div class="timeline">
+                    <!-- Most recent first: 08 Apr 2025 -->
+                    <div class="timeline-entry left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">08 abr 2025 – 08 oct 2025</div>
+                        <div class="timeline-content">
+                            <h4 class="h5 fw-semibold mb-1" data-translate="experience.jobs.ticAnalyst.title">Analista de TIC (Prácticas Preprofesionales)</h4>
+                            <div class="small text-muted mb-2" data-translate="experience.jobs.ticAnalyst.company">GAD Municipal de Alausí</div>
+                            <p class="mb-2" data-translate="experience.jobs.ticAnalyst.description">Desarrollo de un sistema de control de asistencia biométrico con API, backend y frontend en Python (Django). Creación de una API para la gestión de trámites institucionales. Diseño y desarrollo de la página web institucional del Tren de Alausí. Administración de bases de datos en MySQL Server y PostgreSQL.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2023 - Presente -->
+                    <div class="timeline-entry right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 - Presente</div>
+                        <div class="timeline-content">
+                            <h4 class="h5 fw-semibold mb-1" data-translate="experience.jobs.freelancer.title">Desarrollador Full-Stack</h4>
+                            <div class="small text-muted mb-2" data-translate="experience.jobs.freelancer.company">Proyectos Independientes</div>
+                            <p class="mb-2" data-translate="experience.jobs.freelancer.description">Desarrollo de aplicaciones web completas usando TypeScript, JavaScript y Python. Implementación de sistemas CRUD, microservicios y análisis de datos empresariales.</p>
+                        </div>
+                    </div>
+
+                    <!-- 10 Jun 2024 – 15 Nov 2024 -->
+                    <div class="timeline-entry left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">10 jun 2024 – 15 nov 2024</div>
+                        <div class="timeline-content">
+                            <h4 class="h5 fw-semibold mb-1" data-translate="experience.jobs.volunteer.title">Voluntariado – Soporte Técnico</h4>
+                            <div class="small text-muted mb-2" data-translate="experience.jobs.volunteer.company">Fundación Aliñambi</div>
+                            <p class="mb-2" data-translate="experience.jobs.volunteer.description">Optimización de la red mediante cableado estructurado. Mantenimiento y configuración de equipos informáticos. Instalación y actualización de software institucional.</p>
+                        </div>
+                    </div>
+
+                    <!-- New: Asistente Comercial -->
+                    <div class="timeline-entry right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">19 nov 2019 – 15 dic 2024</div>
+                        <div class="timeline-content">
+                            <h4 class="h5 fw-semibold mb-1" data-translate="experience.jobs.commercial.title">Asistente Comercial</h4>
+                            <div class="small text-muted mb-2" data-translate="experience.jobs.commercial.company">VAMORET S.A</div>
+                            <p class="mb-2" data-translate="experience.jobs.commercial.description">Supervisión y control de inventarios, reduciendo errores y mejorando la trazabilidad. Coordinación logística de envíos y recepción de mercancías. Atención al cliente y gestión eficiente de incidencias comerciales. Colaboración en la mejora continua de procesos administrativos y comerciales.</p>
+                        </div>
+                    </div>
+
+                    <!-- New: Desarrollo de Sistemas Biométricos -->
+                    <div class="timeline-entry left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2022 - 2023</div>
+                        <div class="timeline-content">
+                            <h4 class="h5 fw-semibold mb-1" data-translate="experience.jobs.biometric.title">Desarrollo de Sistemas Biométricos</h4>
+                            <div class="small text-muted mb-2" data-translate="experience.jobs.biometric.company">Proyectos Académicos</div>
+                            <p class="mb-2" data-translate="experience.jobs.biometric.description">Implementación de sistemas de control de asistencia con integración biométrica y mejoras en autenticación.</p>
+                        </div>
+                    </div>
+
+                    <!-- 2021 - 2025 -->
+                    <div class="timeline-entry right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021 - 2025</div>
+                        <div class="timeline-content">
+                            <h4 class="h5 fw-semibold mb-1" data-translate="experience.jobs.engineering.title">Ingeniería en Tecnologías de la Información</h4>
+                            <div class="small text-muted mb-2" data-translate="experience.jobs.engineering.company">Universidad de las Fuerzas Armadas ESPE</div>
+                            <p class="mb-2" data-translate="experience.jobs.engineering.description">Formación académica especializada en desarrollo de software, sistemas de información y tecnologías emergentes. Enfoque en arquitectura de software y análisis de datos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="skills-list">
+                    <div class="skills-card">
+                        <h3 class="h4 fw-bold mb-4" data-translate="skills.title">Habilidades Técnicas</h3>
+
+                        <div class="skills-entry">
+                            <div class="skills-date">08 abr 2025 – 08 oct 2025</div>
+                            <div class="skills-box mt-2 d-flex flex-wrap gap-2">
+                                <div class="skill-chip">
+                                    <img src="images/python_icon_6.png" alt="Python" class="skill-icon-img" loading="lazy">
+                                    <div class="skill-label">Python</div>
+                                </div>
+                                <div class="skill-chip">
+                                    <i data-lucide="server" class="skill-icon-svg" aria-hidden="true"></i>
+                                    <div class="skill-label">Django</div>
+                                </div>
+                                <div class="skill-chip">
+                                    <svg class="skill-icon-svg" width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect x="3" y="4" width="18" height="4" rx="1" fill="#2563EB" />
+                                        <rect x="3" y="10" width="18" height="4" rx="1" fill="#1F2937" />
+                                        <rect x="3" y="16" width="18" height="4" rx="1" fill="#0EA5A4" />
+                                    </svg>
+                                    <div class="skill-label">MySQL</div>
+                                </div>
+                                <div class="skill-chip">
+                                    <svg class="skill-icon-svg" width="40" height="40" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <circle cx="32" cy="32" r="30" fill="#2b6cb0" />
+                                        <text x="32" y="38" font-size="20" text-anchor="middle" fill="#fff" font-weight="700">PG</text>
+                                    </svg>
+                                    <div class="skill-label">Postgres</div>
+                                </div>
+                                <div class="skill-chip">
+                                    <img src="images/biometric_icon_8.jpg" alt="Biométricos" class="skill-icon-img" loading="lazy">
+                                    <div class="skill-label">Biométricos</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-entry">
+                            <div class="skills-date">2023 - Presente</div>
+                            <div class="skills-box mt-2 d-flex flex-wrap gap-2">
+                                <div class="skill-chip">
+                                    <img src="images/typescript_icon_3.png" alt="TypeScript" class="skill-icon-img" loading="lazy">
+                                    <div class="skill-label">TypeScript</div>
+                                </div>
+                                <div class="skill-chip">
+                                    <img src="images/python_icon_6.png" alt="Python" class="skill-icon-img" loading="lazy">
+                                    <div class="skill-label">Python</div>
+                                </div>
+                                <div class="skill-chip">
+                                    <img src="images/power_bi_icon_8.jpg" alt="Power BI" class="skill-icon-img" loading="lazy">
+                                    <div class="skill-label">Power BI</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-entry">
+                            <div class="skills-date">10 jun 2024 – 15 nov 2024</div>
+                            <div class="skills-box mt-2 d-flex flex-wrap gap-2">
+                                <div class="skill-chip">
+                                    <i data-lucide="wifi" class="skill-icon-svg" aria-hidden="true"></i>
+                                    <div class="skill-label">Redes</div>
+                                </div>
+                                <div class="skill-chip">
+                                    <i data-lucide="wrench" class="skill-icon-svg" aria-hidden="true"></i>
+                                    <div class="skill-label">Soporte</div>
+                                </div>
+                                <div class="skill-chip">
+                                    <i data-lucide="settings" class="skill-icon-svg" aria-hidden="true"></i>
+                                    <div class="skill-label">Mantenimiento</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-entry">
+                            <div class="skills-date">19 nov 2019 – 15 dic 2024</div>
+                            <div class="skills-box mt-2 d-flex flex-wrap gap-2">
+                                <div class="skill-chip">
+                                    <i data-lucide="briefcase" class="skill-icon-svg" aria-hidden="true"></i>
+                                    <div class="skill-label">Gestión</div>
+                                </div>
+                                <div class="skill-chip">
+                                    <i data-lucide="truck" class="skill-icon-svg" aria-hidden="true"></i>
+                                    <div class="skill-label">Logística</div>
+                                </div>
+                                <div class="skill-chip">
+                                    <i data-lucide="message-square" class="skill-icon-svg" aria-hidden="true"></i>
+                                    <div class="skill-label">Atención</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-entry">
+                            <div class="skills-date">2022 - 2023</div>
+                            <div class="skills-box mt-2 d-flex flex-wrap gap-2">
+                                <div class="skill-chip">
+                                    <img src="images/biometric_icon_8.jpg" alt="Biométricos" class="skill-icon-img" loading="lazy">
+                                    <div class="skill-label">Biométricos</div>
+                                </div>
+                                <div class="skill-chip">
+                                    <i data-lucide="shield-check" class="skill-icon-svg" aria-hidden="true"></i>
+                                    <div class="skill-label">Seguridad</div>
+                                </div>
+                                <div class="skill-chip">
+                                    <i data-lucide="cpu" class="skill-icon-svg" aria-hidden="true"></i>
+                                    <div class="skill-label">Hardware</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-entry">
+                            <div class="skills-date">2021 - 2025</div>
+                            <div class="skills-box mt-2 d-flex flex-wrap gap-2">
+                                <div class="skill-chip">
+                                    <img src="images/java_icon_4.jpg" alt="Java" class="skill-icon-img" loading="lazy">
+                                    <div class="skill-label">Java</div>
+                                </div>
+                                <div class="skill-chip">
+                                    <svg class="skill-icon-svg" width="40" height="40" viewBox="0 0 24 24"><path fill="#6b7280" d="M3 3h18v4H3zM3 9h18v12H3z"/></svg>
+                                    <div class="skill-label">Bases de Datos</div>
+                                </div>
+                                <div class="skill-chip">
+                                    <i data-lucide="bar-chart-3" class="skill-icon-svg" aria-hidden="true"></i>
+                                    <div class="skill-label">Análisis</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </aside>
+
+            </div>
+                    
+
+                    
+                </div>
+            </div>
+
+            <!-- Site Preview Modal -->
+            <div class="modal fade" id="sitePreviewModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="sitePreviewTitle">Vista previa</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body p-0" style="min-height: 560px;">
+                            <div id="sitePreviewWrapper" style="height:560px; position:relative;">
+                                <iframe id="sitePreviewIframe" src="" frameborder="0" style="width:100%; height:100%;"></iframe>
+                                <div id="sitePreviewFallback" class="p-4 text-center d-none">
+                                    <p class="mb-3">No se pudo mostrar la vista previa en un iframe (política X-Frame-Options). Puedes abrir el sitio en una nueva pestaña:</p>
+                                    <a id="sitePreviewFallbackLink" href="#" target="_blank" class="btn btn-primary">Abrir sitio</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section with Enhanced Cards -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-lg-8 text-center">
+                    <h2 class="display-4 fw-bold text-dark mb-4">Proyectos Destacados</h2>
+                    <p class="lead text-muted">
+                        Soluciones tecnológicas innovadoras que demuestran expertise en desarrollo 
+                        y análisis de datos.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Proyecto 1 -->
+                <div class="col-12 col-lg-4">
+                    <div class="card project-card h-100">
+                        <img src="images/power_bi_icon_8.jpg" class="card-img-top" alt="Dashboard Power BI" loading="lazy">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 overlay">
+                            <a href="https://github.com/Jairo977" target="_blank" class="btn btn-light btn-sm rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <button class="btn btn-light btn-sm rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;" onclick="openProjectModal('powerbi')">
+                                <i data-lucide="eye"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Dashboard Power BI Empresarial</h5>
+                            <p class="card-text">Sistema avanzado de análisis de datos con visualizaciones interactivas, KPIs en tiempo real y reportes automatizados.</p>
+                            <div>
+                                <span class="badge bg-primary">Power BI</span>
+                                <span class="badge bg-success">Python</span>
+                                <span class="badge bg-info">Análisis de Datos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Websites / Sitios Web -->
+                <div class="col-12">
+                    <h3 class="h4 fw-bold mt-4 mb-3">Sitios Web (Diseño & Desarrollo)</h3>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card site-card h-100">
+                        <div class="site-thumb d-flex align-items-center justify-content-center">
+                            <div class="site-thumb-text">mf39e2e73z.space.minimax.io</div>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Portfolio - mf39e2e73z.space.minimax.io</h5>
+                            <p class="card-text text-muted small">Diseño y desarrollo de sitio web responsive. Preview disponible.</p>
+                            <div class="mt-auto d-flex gap-2">
+                                <button class="btn btn-outline-primary" onclick="openSitePreview('https://mf39e2e73z.space.minimax.io/#about','Portfolio MF')">Vista previa</button>
+                                <a href="https://mf39e2e73z.space.minimax.io/#about" target="_blank" class="btn btn-primary">Visitar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="col-12 col-lg-4">
+                    <div class="card project-card h-100">
+                        <img src="images/typescript_icon_3.png" class="card-img-top" alt="Gestión de Tareas" style="object-fit: contain; padding: 30px;" loading="lazy">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 overlay">
+                            <a href="https://github.com/Jairo977/gestion-de-tareas" target="_blank" class="btn btn-light btn-sm rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <button class="btn btn-light btn-sm rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;" onclick="openProjectModal('typescript')">
+                                <i data-lucide="eye"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Gestión de Tareas TypeScript</h5>
+                            <p class="card-text">Aplicación CRUD completa construida con TypeScript y Stencil. Interfaz moderna con componentes reutilizables y gestión de estado.</p>
+                            <div>
+                                <span class="badge bg-primary">TypeScript</span>
+                                <span class="badge bg-warning text-dark">Stencil</span>
+                                <span class="badge bg-info">React</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="col-12 col-lg-4">
+                    <div class="card project-card h-100">
+                        <img src="images/python_icon_6.png" class="card-img-top" alt="Análisis Python" style="object-fit: contain; padding: 30px; background: #f9fafb;" loading="lazy">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 overlay">
+                            <a href="https://github.com/Jairo977" target="_blank" class="btn btn-light btn-sm rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <button class="btn btn-light btn-sm rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;" onclick="openProjectModal('python')">
+                                <i data-lucide="eye"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Análisis de Datos con Python</h5>
+                            <p class="card-text">Plataforma de análisis avanzada con machine learning, procesamiento de big data y visualizaciones automáticas.</p>
+                            <div>
+                                <span class="badge bg-success">Python</span>
+                                <span class="badge bg-secondary">MongoDB</span>
+                                <span class="badge bg-danger">Pandas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="col-12 col-lg-4">
+                    <div class="card project-card h-100">
+                        <img src="images/microservices_icon_6.jpg" class="card-img-top" alt="Microservicios" loading="lazy">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 overlay">
+                            <a href="https://github.com/Jairo977/Microservicio-Gestion-Publicaciones" target="_blank" class="btn btn-light btn-sm rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <button class="btn btn-light btn-sm rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;" onclick="openProjectModal('microservices')">
+                                <i data-lucide="eye"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Arquitectura de Microservicios</h5>
+                            <p class="card-text">Sistema distribuido con 5 microservicios independientes, API Gateway, load balancing y 99.9% uptime.</p>
+                            <div>
+                                <span class="badge bg-success">Node.js</span>
+                                <span class="badge bg-secondary">MongoDB</span>
+                                <span class="badge bg-primary">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5 -->
+                <div class="col-12 col-lg-4">
+                    <div class="card project-card h-100">
+                        <img src="images/java_icon_4.jpg" class="card-img-top" alt="Java SOAP" loading="lazy">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 overlay">
+                            <a href="https://github.com/Jairo977/EnvioExpressSOAP" target="_blank" class="btn btn-light btn-sm rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <button class="btn btn-light btn-sm rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;" onclick="openProjectModal('java')">
+                                <i data-lucide="eye"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Servicios Empresariales Java</h5>
+                            <p class="card-text">APIs SOAP enterprise con Spring Framework, gestión de transacciones y arquitectura de capas escalable.</p>
+                            <div>
+                                <span class="badge bg-danger">Java</span>
+                                <span class="badge bg-warning text-dark">Spring</span>
+                                <span class="badge bg-secondary">SOAP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6 -->
+                <div class="col-12 col-lg-4">
+                    <div class="card project-card h-100">
+                        <img src="images/biometric_icon_8.jpg" class="card-img-top" alt="Sistema Biométrico" loading="lazy">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 overlay">
+                            <a href="https://github.com/Jairo977/Control-asistencia-Biometrico" target="_blank" class="btn btn-light btn-sm rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <button class="btn btn-light btn-sm rounded-circle" style="width: 45px; height: 45px; display: flex; align-items: center; justify-content: center;" onclick="openProjectModal('biometric')">
+                                <i data-lucide="eye"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Sistema Biométrico Avanzado</h5>
+                            <p class="card-text">Control de acceso biométrico con autenticación multifactorial, encriptación end-to-end y reportes en tiempo real.</p>
+                            <div>
+                                <span class="badge bg-danger">Biométricos</span>
+                                <span class="badge bg-warning text-dark">HTML5</span>
+                                <span class="badge bg-primary">Seguridad</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section with Enhanced Visuals -->
+    <section id="skills" class="py-5 bg-light">
+        <div class="container px-4">
+            <div class="d-flex justify-content-center mb-5">
+                <div class="col-12 col-lg-8 text-center">
+                    <h2 class="display-4 fw-bold text-dark mb-4">Habilidades Técnicas</h2>
+                    <p class="lead text-muted">
+                        Expertise técnico respaldado por experiencia práctica y proyectos reales.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Skills Distribution Chart -->
+            <div class="mb-5">
+                <h3 class="h4 fw-semibold text-dark mb-4 text-center">Distribución por Tecnologías</h3>
+                <div class="bg-white rounded p-4 shadow border">
+                    <div class="mb-3">
+                        <div class="skill-bar-container mb-3">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="images/power_bi_icon_8.jpg" alt="Power BI" class="rounded" style="width: 32px; height: 32px;" loading="lazy">
+                                    <span class="fw-semibold text-dark">Power BI</span>
+                                </div>
+                                <span class="fw-bold text-secondary">98%</span>
+                            </div>
+                            <div class="bg-light rounded-pill overflow-hidden" style="height: 12px;">
+                                <div class="bg-secondary rounded-pill" style="width: 98%; height: 100%; transition: width 1s ease;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-container mb-3">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="images/python_icon_6.png" alt="Python" class="rounded" style="width: 32px; height: 32px;" loading="lazy">
+                                    <span class="fw-semibold text-dark">Python</span>
+                                </div>
+                                <span class="fw-bold text-secondary">98%</span>
+                            </div>
+                            <div class="bg-light rounded-pill overflow-hidden" style="height: 12px;">
+                                <div class="bg-secondary rounded-pill" style="width: 98%; height: 100%; transition: width 1s ease;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-container mb-3">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i data-lucide="file-code" style="font-size: 32px;"></i>
+                                    <span class="fw-semibold text-dark">HTML/CSS</span>
+                                </div>
+                                <span class="fw-bold text-secondary">95%</span>
+                            </div>
+                            <div class="bg-light rounded-pill overflow-hidden" style="height: 12px;">
+                                <div class="bg-secondary rounded-pill" style="width: 95%; height: 100%; transition: width 1s ease;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-container mb-3">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i data-lucide="git-branch" style="font-size: 32px;"></i>
+                                    <span class="fw-semibold text-dark">Git/GitHub</span>
+                                </div>
+                                <span class="fw-bold text-secondary">95%</span>
+                            </div>
+                            <div class="bg-light rounded-pill overflow-hidden" style="height: 12px;">
+                                <div class="bg-secondary rounded-pill" style="width: 95%; height: 100%; transition: width 1s ease;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-container mb-3">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i data-lucide="layout" style="font-size: 32px;"></i>
+                                    <span class="fw-semibold text-dark">Bootstrap</span>
+                                </div>
+                                <span class="fw-bold text-secondary">90%</span>
+                            </div>
+                            <div class="bg-light rounded-pill overflow-hidden" style="height: 12px;">
+                                <div class="bg-secondary rounded-pill" style="width: 90%; height: 100%; transition: width 1s ease;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-container mb-3">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="images/typescript_icon_3.png" alt="TypeScript" class="rounded" style="width: 32px; height: 32px;" loading="lazy">
+                                    <span class="fw-semibold text-dark">TypeScript</span>
+                                </div>
+                                <span class="fw-bold text-secondary">90%</span>
+                            </div>
+                            <div class="bg-light rounded-pill overflow-hidden" style="height: 12px;">
+                                <div class="bg-secondary rounded-pill" style="width: 90%; height: 100%; transition: width 1s ease;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-container mb-3">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i data-lucide="braces" style="font-size: 32px;"></i>
+                                    <span class="fw-semibold text-dark">JavaScript</span>
+                                </div>
+                                <span class="fw-bold text-secondary">85%</span>
+                            </div>
+                            <div class="bg-light rounded-pill overflow-hidden" style="height: 12px;">
+                                <div class="bg-secondary rounded-pill" style="width: 85%; height: 100%; transition: width 1s ease;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-container mb-3">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i data-lucide="network" style="font-size: 32px;"></i>
+                                    <span class="fw-semibold text-dark">Microservicios</span>
+                                </div>
+                                <span class="fw-bold text-secondary">85%</span>
+                            </div>
+                            <div class="bg-light rounded-pill overflow-hidden" style="height: 12px;">
+                                <div class="bg-secondary rounded-pill" style="width: 85%; height: 100%; transition: width 1s ease;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-container mb-3">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="images/java_icon_4.jpg" alt="Java" class="rounded" style="width: 32px; height: 32px;" loading="lazy">
+                                    <span class="fw-semibold text-dark">Java</span>
+                                </div>
+                                <span class="fw-bold text-secondary">70%</span>
+                            </div>
+                            <div class="bg-light rounded-pill overflow-hidden" style="height: 12px;">
+                                <div class="bg-secondary rounded-pill" style="width: 70%; height: 100%; transition: width 1s ease;"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-container mb-3">
+                            <div class="d-flex align-items-center justify-content-between mb-2">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="images/biometric_icon_8.jpg" alt="Biometrics" class="rounded" style="width: 32px; height: 32px;" loading="lazy">
+                                    <span class="fw-semibold text-dark">Sistemas Biométricos</span>
+                                </div>
+                                <span class="fw-bold text-secondary">80%</span>
+                            </div>
+                            <div class="bg-light rounded-pill overflow-hidden" style="height: 12px;">
+                                <div class="bg-secondary rounded-pill" style="width: 80%; height: 100%; transition: width 1s ease;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Specializations -->
+            <div class="mb-5">
+                <h3 class="h4 fw-semibold text-dark mb-4 text-center">Especializaciones</h3>
+                <div class="row g-4">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="bg-white p-4 rounded shadow border h-100">
+                            <h4 class="h5 fw-semibold text-dark mb-3 d-flex align-items-center gap-2">
+                                <i data-lucide="bar-chart-3" class="text-secondary"></i>
+                                Análisis de Datos
+                            </h4>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary text-dark rounded-pill">Power BI</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">Python</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">Pandas</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">Visualización</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">KPIs</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="bg-white p-4 rounded shadow border h-100">
+                            <h4 class="h5 fw-semibold text-dark mb-3 d-flex align-items-center gap-2">
+                                <i data-lucide="code" class="text-secondary"></i>
+                                Desarrollo Full-Stack
+                            </h4>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary text-dark rounded-pill">TypeScript</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">JavaScript</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">Node.js</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">React</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="bg-white p-4 rounded shadow border h-100">
+                            <h4 class="h5 fw-semibold text-dark mb-3 d-flex align-items-center gap-2">
+                                <i data-lucide="network" class="text-secondary"></i>
+                                Arquitectura
+                            </h4>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary text-dark rounded-pill">Microservicios</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">APIs RESTful</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">SOAP</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">Docker</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">Cloud</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="bg-white p-4 rounded shadow border h-100">
+                            <h4 class="h5 fw-semibold text-dark mb-3 d-flex align-items-center gap-2">
+                                <i data-lucide="shield-check" class="text-secondary"></i>
+                                Seguridad
+                            </h4>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-secondary text-dark rounded-pill">Biométricos</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">Autenticación</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">Encriptación</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">OAuth</span>
+                                <span class="badge bg-secondary text-dark rounded-pill">JWT</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="py-5">
+        <div class="container px-4">
+            <div class="d-flex justify-content-center mb-5">
+                <div class="col-12 col-lg-8 text-center">
+                    <h2 class="display-4 fw-bold text-dark mb-4">Certificaciones y Logros</h2>
+                    <p class="lead text-muted">
+                        Reconocimientos y certificaciones que validan mi expertise técnico.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="bg-white rounded p-4 shadow border h-100 position-relative overflow-hidden">
+                        <div class="position-absolute top-0 start-0 w-100" style="height: 4px; background: linear-gradient(to right, #6b7280, #4b5563);"></div>
+                        <div class="d-flex justify-content-center mb-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center border border-4 border-secondary" style="width: 80px; height: 80px; background-color: #f8f9fa;">
+                                <i data-lucide="graduation-cap" class="text-secondary" style="font-size: 40px;"></i>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="h5 fw-semibold text-dark mb-2">Ingeniería en TI</h3>
+                            <p class="text-secondary fw-medium mb-3">Universidad de las Fuerzas Armadas ESPE</p>
+                            <p class="text-muted mb-3">
+                                Título profesional en Ingeniería en Tecnologías de la Información 
+                                con especialización en desarrollo de software y análisis de datos.
+                            </p>
+                            <div class="small text-muted fw-medium">2025</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="bg-white rounded p-4 shadow border h-100 position-relative overflow-hidden">
+                        <div class="position-absolute top-0 start-0 w-100" style="height: 4px; background: linear-gradient(to right, #6b7280, #4b5563);"></div>
+                        <div class="d-flex justify-content-center mb-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center border border-4 border-secondary" style="width: 80px; height: 80px; background-color: #f8f9fa;">
+                                <i data-lucide="award" class="text-secondary" style="font-size: 40px;"></i>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="h5 fw-semibold text-dark mb-2">Power BI Specialist</h3>
+                            <p class="text-secondary fw-medium mb-3">Microsoft Certified</p>
+                            <p class="text-muted mb-3">
+                                Certificación oficial en Power BI para desarrollo de dashboards 
+                                empresariales y análisis avanzado de datos.
+                            </p>
+                            <div class="small text-muted fw-medium">2024</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="bg-white rounded p-4 shadow border h-100 position-relative overflow-hidden">
+                        <div class="position-absolute top-0 start-0 w-100" style="height: 4px; background: linear-gradient(to right, #6b7280, #4b5563);"></div>
+                        <div class="d-flex justify-content-center mb-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center border border-4 border-secondary" style="width: 80px; height: 80px; background-color: #f8f9fa;">
+                                <img src="images/python_icon_6.png" alt="Python Certification" class="rounded" style="width: 40px; height: 40px;" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="h5 fw-semibold text-dark mb-2">Python Data Analyst</h3>
+                            <p class="text-secondary fw-medium mb-3">Python Institute</p>
+                            <p class="text-muted mb-3">
+                                Certificación en análisis de datos con Python, incluyendo 
+                                pandas, numpy, matplotlib y machine learning básico.
+                            </p>
+                            <div class="small text-muted fw-medium">2024</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="bg-white rounded p-4 shadow border h-100 position-relative overflow-hidden">
+                        <div class="position-absolute top-0 start-0 w-100" style="height: 4px; background: linear-gradient(to right, #6b7280, #4b5563);"></div>
+                        <div class="d-flex justify-content-center mb-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center border border-4 border-secondary" style="width: 80px; height: 80px; background-color: #f8f9fa;">
+                                <img src="images/typescript_icon_3.png" alt="TypeScript Certification" class="rounded" style="width: 40px; height: 40px;" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="h5 fw-semibold text-dark mb-2">TypeScript Developer</h3>
+                            <p class="text-secondary fw-medium mb-3">Meta/React</p>
+                            <p class="text-muted mb-3">
+                                Desarrollo profesional con TypeScript, incluyendo tipado avanzado, 
+                                generics y mejores prácticas de desarrollo.
+                            </p>
+                            <div class="small text-muted fw-medium">2024</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="bg-white rounded p-4 shadow border h-100 position-relative overflow-hidden">
+                        <div class="position-absolute top-0 start-0 w-100" style="height: 4px; background: linear-gradient(to right, #6b7280, #4b5563);"></div>
+                        <div class="d-flex justify-content-center mb-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center border border-4 border-secondary" style="width: 80px; height: 80px; background-color: #f8f9fa;">
+                                <i data-lucide="github" class="text-secondary" style="font-size: 40px;"></i>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="h5 fw-semibold text-dark mb-2">GitHub Professional</h3>
+                            <p class="text-secondary fw-medium mb-3">GitHub</p>
+                            <p class="text-muted mb-3">
+                                Dominio avanzado de Git, GitHub Actions, CI/CD y colaboración 
+                                profesional en equipos de desarrollo.
+                            </p>
+                            <div class="small text-muted fw-medium">2023</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="bg-white rounded p-4 shadow border h-100 position-relative overflow-hidden">
+                        <div class="position-absolute top-0 start-0 w-100" style="height: 4px; background: linear-gradient(to right, #6b7280, #4b5563);"></div>
+                        <div class="d-flex justify-content-center mb-3">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center border border-4 border-secondary" style="width: 80px; height: 80px; background-color: #f8f9fa;">
+                                <img src="images/mongodb_icon_7.jpg" alt="Database Certification" class="rounded" style="width: 40px; height: 40px;" loading="lazy">
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="h5 fw-semibold text-dark mb-2">Database Administrator</h3>
+                            <p class="text-secondary fw-medium mb-3">MongoDB University</p>
+                            <p class="text-muted mb-3">
+                                Administración de bases de datos MongoDB, optimización de consultas 
+                                y diseño de esquemas escalables.
+                            </p>
+                            <div class="small text-muted fw-medium">2023</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section with Enhanced Form -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container px-4">
+            <div class="d-flex justify-content-center mb-5">
+                <div class="col-12 col-lg-8 text-center">
+                    <h2 class="display-4 fw-bold text-dark mb-4">Trabajemos Juntos</h2>
+                    <p class="lead text-muted">
+                        ¿Tienes un proyecto interesante? Estoy disponible para colaborar 
+                        en soluciones tecnológicas innovadoras.
+                    </p>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <div class="col-12 col-lg-10">
+                    <div class="text-center mb-4">
+                        <div class="d-inline-flex align-items-center gap-2 bg-success bg-opacity-10 text-success px-3 py-2 rounded-pill fw-medium">
+                            <div class="bg-success rounded-circle" style="width: 12px; height: 12px;"></div>
+                            <span>Disponible para nuevas oportunidades</span>
+                        </div>
+                        <p class="text-muted mt-2">
+                            Respuesta garantizada en menos de 24 horas
+                        </p>
+                    </div>
+
+                    <div class="bg-white rounded shadow p-4 p-lg-5">
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-12 col-md-6">
+                                    <label for="name" class="form-label fw-medium text-muted mb-2">Nombre</label>
+                                    <input type="text" id="name" name="name" class="form-control border-0 bg-light" style="border-radius: 8px;" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="email" class="form-label fw-medium text-muted mb-2">Correo Electrónico</label>
+                                    <input type="email" id="email" name="email" class="form-control border-0 bg-light" style="border-radius: 8px;" required>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label fw-medium text-muted mb-2">Asunto</label>
+                                <input type="text" id="subject" name="subject" class="form-control border-0 bg-light" style="border-radius: 8px;" required>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="message" class="form-label fw-medium text-muted mb-2">Mensaje</label>
+                                <textarea id="message" name="message" rows="6" class="form-control border-0 bg-light" style="border-radius: 8px; resize: vertical;" required></textarea>
+                            </div>
+                            
+                            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                                <button type="submit" class="btn btn-secondary text-white fw-semibold py-3 px-4 rounded-pill shadow" style="color: #ffffff !important;">
+                                    <i data-lucide="mail" class="me-2" style="color: #ffffff !important;"></i>
+                                    <span>Enviar Correo</span>
+                                </button>
+                                <button type="button" id="whatsappBtn" class="btn btn-success text-white fw-semibold py-3 px-4 rounded-pill shadow" style="color: #ffffff !important;">
+                                    <i data-lucide="message-circle" class="me-2" style="color: #ffffff !important;"></i>
+                                    <span>Enviar por WhatsApp</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                        <!-- Enhanced Contact Links -->
+                        <div class="row g-4 mt-5">
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <a href="https://github.com/Jairo977" target="_blank" class="text-decoration-none">
+                                    <div class="bg-white p-4 rounded shadow border text-center h-100">
+                                        <div class="bg-light rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 48px; height: 48px;">
+                                            <i data-lucide="github" class="text-secondary" style="font-size: 24px;"></i>
+                                        </div>
+                                        <h4 class="h6 fw-semibold text-dark mb-2">GitHub</h4>
+                                        <p class="text-muted mb-2">@Jairo977</p>
+                                        <span class="badge bg-success bg-opacity-10 text-success rounded-pill">
+                                            <div class="bg-success rounded-circle me-1" style="width: 8px; height: 8px; display: inline-block;"></div>
+                                            Activo
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <a href="https://www.linkedin.com/in/jairo-ruiz-9870932a4" target="_blank" class="text-decoration-none">
+                                    <div class="bg-white p-4 rounded shadow border text-center h-100">
+                                        <div class="bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 48px; height: 48px;">
+                                            <i data-lucide="linkedin" class="text-primary" style="font-size: 24px;"></i>
+                                        </div>
+                                        <h4 class="h6 fw-semibold text-dark mb-2">LinkedIn</h4>
+                                        <p class="text-muted mb-2">Jairo Ruiz</p>
+                                        <span class="badge bg-success bg-opacity-10 text-success rounded-pill">
+                                            <div class="bg-success rounded-circle me-1" style="width: 8px; height: 8px; display: inline-block;"></div>
+                                            Disponible
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <a href="https://wa.me/593960047635" target="_blank" class="text-decoration-none">
+                                    <div class="bg-white p-4 rounded shadow border text-center h-100">
+                                        <div class="bg-success bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 48px; height: 48px;">
+                                            <i data-lucide="message-circle" class="text-success" style="font-size: 24px;"></i>
+                                        </div>
+                                        <h4 class="h6 fw-semibold text-dark mb-2">WhatsApp</h4>
+                                        <p class="text-muted mb-2">+593 96 004 7635</p>
+                                        <span class="badge bg-success bg-opacity-10 text-success rounded-pill">
+                                            <div class="bg-success rounded-circle me-1" style="width: 8px; height: 8px; display: inline-block;"></div>
+                                            En línea
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-12 col-md-6 col-lg-3">
+                                <a href="mailto:jwruiz@espe.edu.ec" class="text-decoration-none">
+                                    <div class="bg-white p-4 rounded shadow border text-center h-100">
+                                        <div class="bg-secondary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center mx-auto mb-3" style="width: 48px; height: 48px;">
+                                            <i data-lucide="mail" class="text-secondary" style="font-size: 24px;"></i>
+                                        </div>
+                                        <h4 class="h6 fw-semibold text-dark mb-2">Email</h4>
+                                        <p class="text-muted mb-2">jwruiz@espe.edu.ec</p>
+                                        <span class="badge bg-primary bg-opacity-10 text-primary rounded-pill">
+                                            <div class="bg-primary rounded-circle me-1" style="width: 8px; height: 8px; display: inline-block;"></div>
+                                            Verificado
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-5">
+                            <a href="https://www.canva.com/design/DAGbofQZ_s4/vY3F9UKDrIYLt7UIsxihvg/view?utm_content=DAGbofQZ_s4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha13e79e6b8#7" target="_blank" class="btn btn-secondary text-white fw-semibold py-3 px-5 rounded-pill shadow">
+                                <i data-lucide="download" class="me-2"></i>
+                                <span>Descargar CV Completo</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Footer -->
+    <footer class="bg-white py-5 border-top border-secondary">
+        <div class="container px-4">
+            <div class="row g-5">
+                <div class="col-12 col-lg-4">
+                    <div class="mb-4">
+                        <img src="images/logodejairo3.png" alt="Logo" style="height: 70px; width: auto;" class="mb-3">
+                        <p class="text-muted mb-0">
+                            Desarrollador Full-Stack especializado en análisis de datos y 
+                            tecnologías modernas. Comprometido con la excelencia técnica 
+                            y soluciones innovadoras.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h5 class="h6 fw-semibold text-dark mb-4">Enlaces Rápidos</h5>
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#about" class="text-muted text-decoration-none">Sobre Mí</a>
+                        <a href="#projects" class="text-muted text-decoration-none">Proyectos</a>
+                        <a href="#skills" class="text-muted text-decoration-none">Habilidades</a>
+                        <a href="#contact" class="text-muted text-decoration-none">Contacto</a>
+                    </div>
+                </div>
+                
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h5 class="h6 fw-semibold text-dark mb-4">Conectemos</h5>
+                    <div class="d-flex gap-3 mb-4">
+                        <a href="https://github.com/Jairo977" target="_blank" class="bg-light rounded-circle d-flex align-items-center justify-content-center text-secondary text-decoration-none" style="width: 40px; height: 40px;">
+                            <i data-lucide="github" style="font-size: 20px;"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jairo-ruiz-9870932a4" target="_blank" class="bg-light rounded-circle d-flex align-items-center justify-content-center text-secondary text-decoration-none" style="width: 40px; height: 40px;">
+                            <i data-lucide="linkedin" style="font-size: 20px;"></i>
+                        </a>
+                        <a href="https://wa.me/593960047635" target="_blank" class="bg-light rounded-circle d-flex align-items-center justify-content-center text-secondary text-decoration-none" style="width: 40px; height: 40px;">
+                            <i data-lucide="message-circle" style="font-size: 20px;"></i>
+                        </a>
+                    </div>
+                    <div class="d-flex align-items-center text-muted">
+                        <i data-lucide="map-pin" class="me-2 text-secondary"></i>
+                        Quito-Sangolquí, Ecuador
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <p class="text-muted small mb-3 mb-md-0">
+                    © 2025 Jairo Wladimir Ruiz Saenz. Todos los derechos reservados.
+                </p>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Detalles del Proyecto</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Dynamic content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top">
+        <i data-lucide="arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!-- Lucide Icons (Deferred) -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <!-- Initialize Lucide Icons with fallback -->
+    <script>
+        // Initialize Lucide icons on page load
+        if (typeof lucide !== 'undefined' && lucide.createIcons) {
+            try {
+                lucide.createIcons();
+            } catch (e) {
+                console.error('Lucide library failed to initialize.', e);
+            }
+        }
+    </script>
+</body>
+</html>
