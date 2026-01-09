@@ -1244,3 +1244,34 @@ body.dark-mode .project-card,
 body.dark-mode .badge {
   color: rgba(255,255,255,0.92) !important;
 }
+
+/* Mobile Sidebar Dark Mode Fixes */
+body.dark-mode #mobileSidebar {
+  background-color: #1e293b !important; /* Fondo oscuro sólido */
+}
+
+body.dark-mode #mobileSidebar .offcanvas-header {
+  border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+body.dark-mode #mobileSidebar .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+body.dark-mode #mobileSidebar .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important; /* Texto blanco */
+}
+
+body.dark-mode #mobileSidebar .nav-link:hover {
+  color: #ffffff !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Fix Navbar Toggler in Dark Mode */
+body.dark-mode .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+body.dark-mode .navbar-toggler-icon {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
