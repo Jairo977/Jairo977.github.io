@@ -1380,3 +1380,39 @@ body.dark-mode .navbar-toggler {
 body.dark-mode .navbar-toggler-icon {
   filter: invert(1) grayscale(100%) brightness(200%);
 }
+
+/* ===== Section Dividers ===== */
+.section-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  gap: 20px;
+}
+
+.divider-line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+  flex: 1;
+  max-width: 200px;
+  border-radius: 1px;
+}
+
+.divider-circle {
+  width: 12px;
+  height: 12px;
+  background: var(--primary-color);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(30, 41, 59, 0.3);
+  flex-shrink: 0;
+}
+
+/* Dark mode section dividers */
+body.dark-mode .divider-line {
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+}
+
+body.dark-mode .divider-circle {
+  background: var(--accent-color);
+  box-shadow: 0 0 10px rgba(20, 184, 166, 0.5);
+}
