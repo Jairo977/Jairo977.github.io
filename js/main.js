@@ -80,7 +80,7 @@ const translations = {
                     description: 'Implementación de sistemas de control de asistencia con integración biométrica. Desarrollo de soluciones de seguridad y autenticación avanzada.'
                 }
             }
-        }, 
+        },
         projects: {
             title: 'Proyectos Destacados',
             description: 'Soluciones tecnológicas innovadoras que demuestran expertise en desarrollo y análisis de datos.',
@@ -90,7 +90,20 @@ const translations = {
                 python: { title: 'Análisis de Datos con Python' },
                 microservices: { title: 'Arquitectura de Microservicios' },
                 java: { title: 'Servicios Empresariales Java' },
-                biometric: { title: 'Sistema Biométrico Avanzado' }
+                biometric: { title: 'Sistema Biométrico Avanzado' },
+                // Nuevos proyectos Web
+                nutrifamili: {
+                    title: 'NutriFamili - Nutrición Familiar',
+                    description: 'Sitio web de nutrición familiar con SEO optimizado al 99%. Diseño moderno, responsive y enfocado en la experiencia de usuario.'
+                },
+                inversef: {
+                    title: 'Inversef - Subastas Judiciales',
+                    description: 'Plataforma profesional para gestión de remates y propiedades. Arquitectura robusta, gestión de datos en tiempo real y diseño corporativo de alto nivel.'
+                },
+                narizdeldiablo: {
+                    title: 'Nariz del Diablo - Turismo',
+                    description: 'Portal turístico inmersivo para la histórica ruta de tren en Alausí. Galería multimedia optimizada e integración de información turística.'
+                }
             }
         },
         skills: {
@@ -209,7 +222,7 @@ const translations = {
                     description: 'Implementation of attendance control systems with biometric integration. Development of security and advanced authentication solutions.'
                 }
             }
-        }, 
+        },
         projects: {
             title: 'Featured Projects',
             description: 'Innovative technological solutions that demonstrate expertise in development and data analysis.',
@@ -219,7 +232,20 @@ const translations = {
                 python: { title: 'Data Analysis with Python' },
                 microservices: { title: 'Microservices Architecture' },
                 java: { title: 'Enterprise Java Services' },
-                biometric: { title: 'Advanced Biometric System' }
+                biometric: { title: 'Advanced Biometric System' },
+                // New Web Projects
+                nutrifamili: {
+                    title: 'NutriFamili - Family Nutrition',
+                    description: 'Family nutrition website with 99% optimized SEO. Modern, responsive design focused on user experience.'
+                },
+                inversef: {
+                    title: 'Inversef - Judicial Auctions',
+                    description: 'Professional platform for auction and property management. Robust architecture, real-time data management, and high-level corporate design.'
+                },
+                narizdeldiablo: {
+                    title: 'Nariz del Diablo - Tourism',
+                    description: 'Immersive tourism portal for the historic train route in Alausí. Optimized multimedia gallery and tourist information integration.'
+                }
             }
         },
         skills: {
@@ -296,7 +322,7 @@ function getNestedTranslation(obj, keyPath) {
 // --- Performance Helpers ---
 function debounce(func, wait = 10) {
     let timeout;
-    return function(...args) {
+    return function (...args) {
         clearTimeout(timeout);
         timeout = setTimeout(() => {
             func.apply(this, args);
@@ -340,7 +366,7 @@ function changeLanguage(lang, save = true) {
     applyTranslations(lang);
     updateThemeIcon(); // refresh theme button text to match current language
     document.documentElement.lang = lang;
-    
+
     // Update language indicator
     const langBtn = document.getElementById('language-toggle');
     if (langBtn) {
@@ -386,17 +412,17 @@ function initThemeToggle() {
 
 function updateThemeIcon() {
     const themeBtns = document.querySelectorAll('#theme-toggle, #mobileThemeToggle');
-    
+
     themeBtns.forEach(btn => {
         // Limpiamos el botón (eliminamos el SVG anterior)
         btn.innerHTML = '';
-        
+
         // Creamos el nuevo elemento ícono
         const newIconName = PortfolioState.darkMode ? 'moon' : 'sun';
         const iconElement = document.createElement('i');
         iconElement.setAttribute('data-lucide', newIconName);
         iconElement.setAttribute('aria-hidden', 'true');
-        
+
         // Lo agregamos al botón
         btn.appendChild(iconElement);
     });
@@ -447,28 +473,28 @@ function initFormHandling() {
     // 1. Manejo del envío por Correo (EmailJS + Brevo)
     form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         const submitBtn = form.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
-        
+
         // Mostrar estado de carga
         submitBtn.disabled = true;
         submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2"></span>Enviando...';
 
         // CONFIGURACIÓN DE EMAILJS
-        
+
         const PUBLIC_KEY = 'MPgSkzcLPk4Sv8Az5';
         const SERVICE_ID = 'service_uii7z4a';
         const TEMPLATE_ID = 'template_wydqtb8';
-        
+
         try {
             // Inicializar (si no se ha hecho)
             if (typeof emailjs !== 'undefined') {
                 emailjs.init(PUBLIC_KEY);
-                
+
                 // Enviar formulario usando los IDs configurados
                 await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form);
-                
+
                 alert('¡Mensaje enviado correctamente! Gracias por contactarme.');
                 form.reset();
             } else {
@@ -490,7 +516,7 @@ function initFormHandling() {
             const email = document.getElementById('email')?.value || '';
             const subject = document.getElementById('subject')?.value || 'Contacto desde Portafolio';
             const message = document.getElementById('message')?.value || '';
-            
+
             if (!name && !message) {
                 alert('Por favor completa al menos tu nombre y el mensaje antes de enviar por WhatsApp.');
                 return;
@@ -499,7 +525,7 @@ function initFormHandling() {
             // Formato del mensaje para WhatsApp
             const phoneNumber = "593960047635";
             const text = `*Hola Jairo, vengo de tu portafolio.* 🚀\n\n*Nombre:* ${name}\n*Email:* ${email}\n*Asunto:* ${subject}\n*Mensaje:* ${message}`;
-            
+
             // Crear la URL y abrirla
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
             window.open(whatsappUrl, '_blank');
@@ -531,16 +557,16 @@ function openProjectModal(projectKey) {
     const modal = new bootstrap.Modal(document.getElementById('projectModal'));
     const title = document.getElementById('modalTitle');
     const body = document.getElementById('modalBody');
-    
+
     if (title) {
         const projectTitle = getNestedTranslation(translations[PortfolioState.currentLanguage], `projects.items.${projectKey}.title`);
         title.textContent = projectTitle || 'Proyecto';
     }
-    
+
     if (body) {
         body.innerHTML = `<p>${PortfolioState.currentLanguage === 'es' ? 'Detalles del proyecto disponibles pronto.' : 'Project details coming soon.'}</p>`;
     }
-    
+
     modal.show();
 }
 
@@ -591,7 +617,7 @@ window.openSitePreview = openSitePreview;
 function initAll() {
     applyTranslations(PortfolioState.currentLanguage);
     updateThemeIcon(); // ensure theme button text matches language on init
-    
+
     // Inicializar texto del idioma (ES/EN)
     const langText = PortfolioState.currentLanguage.toUpperCase();
     document.querySelectorAll('#language-toggle span, #mobile-language-toggle span').forEach(el => el.textContent = langText);
@@ -603,6 +629,8 @@ function initAll() {
     initFormHandling();
     initStatCounters();
     initSkillBars();
+    initScrollReveal();
+    initAnimatedCounters();
 
     // Language toggle listeners
     const langToggle = document.getElementById('language-toggle');
@@ -628,7 +656,7 @@ function initAll() {
 // --- Skill Bars Animation ---
 function initSkillBars() {
     const skillBars = document.querySelectorAll('.skill-bar-container .bg-secondary');
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -643,8 +671,59 @@ function initSkillBars() {
             }
         });
     }, { threshold: 0.5 });
-    
+
     skillBars.forEach(bar => observer.observe(bar));
+}
+
+// --- Scroll Reveal Animation ---
+function initScrollReveal() {
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                // Don't unobserve to allow re-animation on scroll back
+            }
+        });
+    }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+}
+
+// --- Enhanced Animated Counter ---
+function initAnimatedCounters() {
+    const counters = document.querySelectorAll('.counter[data-target]');
+
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute('data-target'));
+                const duration = 2000; // 2 seconds
+                const step = target / (duration / 16); // 60fps
+                let current = 0;
+
+                const updateCounter = () => {
+                    current += step;
+                    if (current < target) {
+                        counter.textContent = Math.ceil(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+
+                updateCounter();
+                counterObserver.unobserve(counter);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(counter => counterObserver.observe(counter));
 }
 
 // Make functions globally available for onclick handlers
