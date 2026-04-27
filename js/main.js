@@ -27,8 +27,8 @@ const translations = {
         },
         hero: {
             title: 'Jairo Ruiz',
-            subtitle: 'Desarrollador Full-Stack | Inteligencia de Datos y Automatización',
-            description: 'Especializado en TypeScript/JavaScript, Python, Power BI y microservicios. Egresado de la carrera de TICs en la Universidad de las Fuerzas Armadas ESPE. Diseño y construyo soluciones web y de datos orientadas a resultados medibles para negocio.',
+            subtitle: 'Ingeniero de Soluciones Digitales | Full-Stack, Datos, BI y Automatización',
+            description: 'Integro desarrollo Full-Stack, ingeniería de datos, Power BI y automatización para construir soluciones end-to-end. Egresado de la carrera de TICs en la Universidad de las Fuerzas Armadas ESPE, enfocado en resultados medibles para negocio.',
             repos: 'Repositorios',
             contributions: 'Contribuciones',
             experience: 'Años Experiencia',
@@ -37,13 +37,13 @@ const translations = {
         },
         about: {
             title: 'Sobre Mí',
-            description1: 'Soy desarrollador Full-Stack y analista de datos, egresado de la carrera de TICs en la Universidad de las Fuerzas Armadas ESPE. Me enfoco en productos digitales sólidos, escalables y listos para producción.',
-            description2: 'Combino dominio técnico en Python (98%) y Power BI (98%) con enfoque estratégico de negocio para transformar datos en decisiones claras, tableros ejecutivos y mejoras operativas reales.',
-            description3: 'Trabajo con TypeScript (90%), JavaScript (85%) y arquitecturas de microservicios para construir plataformas mantenibles, seguras y con alto rendimiento, desde la idea hasta la implementación final.',
+            description1: 'Soy ingeniero de soluciones digitales, egresado de la carrera de TICs en la Universidad de las Fuerzas Armadas ESPE. Combino desarrollo Full-Stack, datos, BI y automatización en productos listos para producción.',
+            description2: 'Trabajo con Python y Power BI como parte de soluciones integrales: desde captura y procesamiento de datos, hasta visualización ejecutiva y automatización de decisiones operativas.',
+            description3: 'Diseño arquitecturas end-to-end con TypeScript, JavaScript, APIs y microservicios para entregar plataformas mantenibles, seguras y de alto rendimiento.',
             'highlights-fullstack': 'Full-Stack',
-            'highlights-dataAnalysis': 'Data Analysis',
-            'highlights-microservices': 'Microservices',
-            'highlights-security': 'Security'
+            'highlights-dataAnalysis': 'Data & BI',
+            'highlights-microservices': 'Automatización',
+            'highlights-security': 'Arquitectura'
         },
         experience: {
             title: 'Experiencia Profesional',
@@ -155,7 +155,7 @@ const translations = {
             }
         },
         footer: {
-            description: 'Desarrollador Full-Stack y analista de datos, egresado de TICs en ESPE, enfocado en crear soluciones digitales que combinan calidad técnica y resultados de negocio.',
+            description: 'Ingeniero de soluciones digitales end-to-end: desarrollo Full-Stack, datos, BI y automatización para crear productos con calidad técnica y resultados de negocio.',
             quickLinks: 'Enlaces Rápidos',
             connect: 'Conectemos',
             location: 'Quito-Sangolquí, Ecuador',
@@ -179,8 +179,8 @@ const translations = {
         },
         hero: {
             title: 'Jairo Ruiz',
-            subtitle: 'Full-Stack Developer | Data Intelligence & Automation',
-            description: 'Specialized in TypeScript/JavaScript, Python, Power BI, and microservices. Graduate in ICT from the Armed Forces University ESPE, focused on delivering web and data solutions that drive measurable business outcomes.',
+            subtitle: 'Digital Solutions Engineer | Full-Stack, Data, BI & Automation',
+            description: 'I integrate Full-Stack development, data engineering, Power BI, and automation to build end-to-end solutions. ICT graduate from the Armed Forces University ESPE, focused on measurable business outcomes.',
             repos: 'Repositories',
             contributions: 'Contributions',
             experience: 'Years Experience',
@@ -189,13 +189,13 @@ const translations = {
         },
         about: {
             title: 'About Me',
-            description1: 'I am a Full-Stack developer and data analyst, ICT graduate from the Armed Forces University ESPE. I build solid, scalable, production-ready digital products.',
-            description2: 'I combine advanced Python (98%) and Power BI (98%) expertise with a business-oriented approach to turn data into clear decisions, executive dashboards, and real operational improvements.',
-            description3: 'I work with TypeScript (90%), JavaScript (85%), and microservice architectures to deliver maintainable, secure, high-performance platforms from concept to deployment.',
+            description1: 'I am a digital solutions engineer and ICT graduate from the Armed Forces University ESPE. I combine Full-Stack development, data, BI, and automation in production-ready products.',
+            description2: 'I use Python and Power BI as part of integrated solutions, from data capture and processing to executive dashboards and automated operational decisions.',
+            description3: 'I design end-to-end architectures with TypeScript, JavaScript, APIs, and microservices to deliver maintainable, secure, high-performance platforms.',
             'highlights-fullstack': 'Full-Stack',
-            'highlights-dataAnalysis': 'Data Analysis',
-            'highlights-microservices': 'Microservices',
-            'highlights-security': 'Security'
+            'highlights-dataAnalysis': 'Data & BI',
+            'highlights-microservices': 'Automation',
+            'highlights-security': 'Architecture'
         },
         experience: {
             title: 'Professional Experience',
@@ -307,7 +307,7 @@ const translations = {
             }
         },
         footer: {
-            description: 'Full-Stack developer and data analyst, ICT graduate from ESPE, focused on building digital solutions that combine technical quality with business impact.',
+            description: 'End-to-end digital solutions engineer: Full-Stack development, data, BI, and automation focused on technical quality and business impact.',
             quickLinks: 'Quick Links',
             connect: 'Let\'s Connect',
             location: 'Quito-Sangolquí, Ecuador',
