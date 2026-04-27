@@ -1639,6 +1639,44 @@ body.dark-mode .site-card .btn-outline-secondary:disabled {
   }
 }
 
+/* ===== Minimal Motion: one signature animation in Projects ===== */
+#projects .reveal,
+#projects .reveal-left,
+#projects .reveal-right {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+#projects .tilt-card {
+  transform-style: flat;
+  transition: box-shadow 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.34s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.34s ease !important;
+}
+
+#projects .shimmer::after,
+#projects .project-card::before {
+  display: none !important;
+}
+
+#projects .card:hover,
+#projects .site-card:hover,
+#projects .project-card:hover {
+  transform: translateY(-6px) !important;
+}
+
+#projects .site-card .card-img-top,
+#projects .project-card .project-cover,
+#projects .project-card .overlay {
+  transition: none !important;
+}
+
+#projects .site-card:hover .card-img-top {
+  transform: none !important;
+  filter: none !important;
+}
+
 /* Mobile - stack experience and skills */
 @media (max-width: 992px) {
   .experience-grid {
