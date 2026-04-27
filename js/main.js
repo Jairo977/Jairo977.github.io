@@ -64,6 +64,16 @@ const translations = {
                     company: 'Proyectos Independientes',
                     description: 'Desarrollo de aplicaciones web end-to-end con TypeScript, JavaScript y Python. Implementación de sistemas CRUD, microservicios y analítica empresarial con enfoque en estabilidad, escalabilidad y valor de negocio.'
                 },
+                inversef: {
+                    title: 'Desarrollador Full-Stack y Data Automation',
+                    company: 'Inversef - Subastas Judiciales',
+                    description: 'Diseño y desarrollo de plataforma web para remates judiciales: módulos de búsqueda y filtros, paneles administrativos, integración de datos en tiempo real y procesos de web scraping para consolidar oportunidades desde fuentes públicas.'
+                },
+                nutrifamili: {
+                    title: 'Desarrollador Web Full-Stack',
+                    company: 'NutriFamili - Plataforma de Nutrición',
+                    description: 'Construcción integral del sitio y experiencia digital de NutriFamili, con interfaz responsive, arquitectura orientada a conversión y optimización SEO técnica para posicionamiento orgánico.'
+                },
                 engineering: {
                     title: 'Egresado en Tecnologías de la Información (TICs)',
                     company: 'Universidad de las Fuerzas Armadas ESPE',
@@ -83,7 +93,7 @@ const translations = {
         },
         projects: {
             title: 'Proyectos Destacados',
-            description: 'Soluciones tecnológicas diseñadas para resolver problemas reales, optimizar procesos y generar resultados medibles.',
+            description: 'Proyectos ejecutados en contextos reales de negocio: desarrollo web, automatización y analítica aplicada con impacto medible.',
             items: {
                 powerbi: { title: 'Dashboard Power BI Empresarial' },
                 typescript: { title: 'Sistema de Gestión Avanzado' },
@@ -206,6 +216,16 @@ const translations = {
                     company: 'Independent Projects',
                     description: 'End-to-end web application development using TypeScript, JavaScript, and Python. Delivery of CRUD systems, microservices, and business analytics with a focus on stability, scalability, and business value.'
                 },
+                inversef: {
+                    title: 'Full-Stack Developer and Data Automation',
+                    company: 'Inversef - Judicial Auctions',
+                    description: 'Design and development of a judicial auctions platform: search and filtering modules, admin dashboards, real-time data integrations, and web scraping workflows to consolidate opportunities from public sources.'
+                },
+                nutrifamili: {
+                    title: 'Full-Stack Web Developer',
+                    company: 'NutriFamili - Nutrition Platform',
+                    description: 'End-to-end development of the NutriFamili digital experience, with responsive interface, conversion-oriented architecture, and technical SEO optimization for organic positioning.'
+                },
                 engineering: {
                     title: 'ICT Graduate',
                     company: 'Armed Forces University ESPE',
@@ -225,7 +245,7 @@ const translations = {
         },
         projects: {
             title: 'Featured Projects',
-            description: 'Technology solutions designed to solve real problems, optimize processes, and produce measurable results.',
+            description: 'Projects delivered in real business contexts: web development, automation, and applied analytics with measurable impact.',
             items: {
                 powerbi: { title: 'Corporate Power BI Dashboard' },
                 typescript: { title: 'Advanced Management System' },
