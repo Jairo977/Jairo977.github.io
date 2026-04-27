@@ -381,6 +381,22 @@
   stroke-width: 1.5;
 }
 
+/* Keep Lucide SVGs from collapsing to 0px width in flex/button contexts */
+.lucide {
+  width: 1.15rem;
+  height: 1.15rem;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn .lucide,
+.btn [data-lucide],
+#scroll-to-top .lucide {
+  width: 1.15rem !important;
+  height: 1.15rem !important;
+}
+
 .bi {
   line-height: 1;
 }
@@ -1037,6 +1053,23 @@ section>.container {
   opacity: 1;
 }
 
+.project-card .overlay .btn {
+  background: rgba(15, 23, 42, 0.72) !important;
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  color: #ffffff !important;
+}
+
+.project-card .overlay .btn:hover {
+  background: rgba(37, 99, 235, 0.82) !important;
+  border-color: rgba(147, 197, 253, 0.92) !important;
+}
+
+.project-card .overlay .lucide {
+  width: 1.22rem;
+  height: 1.22rem;
+  stroke-width: 2.2;
+}
+
 .project-card .badge {
   font-size: 12px;
   padding: 6px 12px;
@@ -1593,6 +1626,11 @@ footer a:hover {
     width: 18px;
     height: 18px;
     stroke-width: 2.2;
+  }
+
+  .mobile-icon-nav__item .lucide {
+    width: 18px;
+    height: 18px;
   }
 
   .mobile-icon-nav__item span {
