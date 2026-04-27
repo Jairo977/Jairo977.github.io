@@ -472,46 +472,51 @@ function toggleLanguage() {
     changeLanguage(next);
 }
 
+function applyTheme(isDark, save = true) {
+    PortfolioState.darkMode = isDark;
+    document.body.classList.toggle('dark-mode', PortfolioState.darkMode);
+    document.documentElement.setAttribute('data-theme', PortfolioState.darkMode ? 'dark' : 'light');
+    if (save) localStorage.setItem('theme', PortfolioState.darkMode ? 'dark' : 'light');
+    updateThemeIcon();
+}
+
 // --- Theme Toggle ---
 function initThemeToggle() {
     const saved = localStorage.getItem('theme');
-    if (saved === 'dark') {
-        document.body.classList.add('dark-mode');
-        PortfolioState.darkMode = true;
-        updateThemeIcon();
-    }
+    applyTheme(saved === 'dark', false);
 
     document.addEventListener('click', (e) => {
         if (e.target.matches('#theme-toggle') || e.target.closest('#theme-toggle')) {
-            PortfolioState.darkMode = !PortfolioState.darkMode;
-            document.body.classList.toggle('dark-mode', PortfolioState.darkMode);
-            localStorage.setItem('theme', PortfolioState.darkMode ? 'dark' : 'light');
-            updateThemeIcon();
+            applyTheme(!PortfolioState.darkMode);
+            return;
         }
         if (e.target.matches('#mobileThemeToggle') || e.target.closest('#mobileThemeToggle')) {
-            PortfolioState.darkMode = !PortfolioState.darkMode;
-            document.body.classList.toggle('dark-mode', PortfolioState.darkMode);
-            localStorage.setItem('theme', PortfolioState.darkMode ? 'dark' : 'light');
-            updateThemeIcon();
+            applyTheme(!PortfolioState.darkMode);
         }
     });
 }
 
 function updateThemeIcon() {
     const themeBtns = document.querySelectorAll('#theme-toggle, #mobileThemeToggle');
+    const label = PortfolioState.darkMode
+        ? (translations[PortfolioState.currentLanguage]?.nav?.lightMode || 'Light mode')
+        : (translations[PortfolioState.currentLanguage]?.nav?.darkMode || 'Dark mode');
 
     themeBtns.forEach(btn => {
         // Limpiamos el botón (eliminamos el SVG anterior)
         btn.innerHTML = '';
 
-        // Creamos el nuevo elemento ícono
-        const newIconName = PortfolioState.darkMode ? 'moon' : 'sun';
+        // En modo oscuro mostramos "sun" para volver a claro; en modo claro mostramos "moon".
+        const newIconName = PortfolioState.darkMode ? 'sun' : 'moon';
         const iconElement = document.createElement('i');
         iconElement.setAttribute('data-lucide', newIconName);
         iconElement.setAttribute('aria-hidden', 'true');
 
         // Lo agregamos al botón
         btn.appendChild(iconElement);
+        btn.setAttribute('aria-label', label);
+        btn.setAttribute('title', label);
+        btn.setAttribute('aria-pressed', PortfolioState.darkMode ? 'true' : 'false');
     });
 
     // After changing attributes, tell Lucide to re-render the icons.
