@@ -304,6 +304,93 @@ const PortfolioState = {
     currentLanguage: localStorage.getItem('language') || 'es'
 };
 
+const projectModalDetails = {
+    powerbi: {
+        es: {
+            summary: 'Proyecto empresarial orientado a indicadores de ventas, rendimiento y control operativo.',
+            bullets: ['KPIs visuales y alertas rápidas para toma de decisiones.', 'Integración de fuentes de datos para reportes consolidados.', 'Diseño ejecutivo para lectura rápida por áreas de negocio.'],
+            repo: 'https://github.com/Jairo977/facturacion',
+            demoLabel: 'Ver repositorio relacionado'
+        },
+        en: {
+            summary: 'Business-focused project for sales indicators, performance tracking, and operational control.',
+            bullets: ['Visual KPIs and quick alerts for decision-making.', 'Integrated data sources for consolidated reporting.', 'Executive-focused design for fast cross-team insights.'],
+            repo: 'https://github.com/Jairo977/facturacion',
+            demoLabel: 'View related repository'
+        }
+    },
+    typescript: {
+        es: {
+            summary: 'Aplicación CRUD construida con TypeScript y enfoque en componentes reutilizables.',
+            bullets: ['Gestión de tareas con operaciones Create, Read, Update y Delete.', 'Arquitectura frontend modular y mantenible.', 'Base ideal para escalar hacia paneles multiusuario.'],
+            repo: 'https://github.com/Jairo977/gestion-de-tareas',
+            demoLabel: 'Ver repositorio'
+        },
+        en: {
+            summary: 'CRUD application built with TypeScript and reusable component patterns.',
+            bullets: ['Task management with full Create, Read, Update, and Delete flows.', 'Modular and maintainable frontend architecture.', 'Strong foundation to scale into multi-user dashboards.'],
+            repo: 'https://github.com/Jairo977/gestion-de-tareas',
+            demoLabel: 'View repository'
+        }
+    },
+    python: {
+        es: {
+            summary: 'Implementaciones Python aplicadas a backend, automatización y análisis de datos.',
+            bullets: ['Servicios backend y lógica de negocio con Python.', 'Procesamiento de datos para reportes y validaciones.', 'Estructura académica-profesional lista para expansión.'],
+            repo: 'https://github.com/Jairo977/ExamenFInal',
+            demoLabel: 'Ver repositorio'
+        },
+        en: {
+            summary: 'Python implementations focused on backend workflows, automation, and data analysis.',
+            bullets: ['Backend services and business logic using Python.', 'Data processing for reporting and validation flows.', 'Academic-professional base ready for further expansion.'],
+            repo: 'https://github.com/Jairo977/ExamenFInal',
+            demoLabel: 'View repository'
+        }
+    },
+    microservices: {
+        es: {
+            summary: 'Arquitectura distribuida con múltiples servicios desacoplados y enfoque de escalabilidad.',
+            bullets: ['API Gateway, descubrimiento de servicios y componentes por dominio.', 'Base para despliegues con contenedores y orquestación.', 'Pensado para separar responsabilidades por microservicio.'],
+            repo: 'https://github.com/Jairo977/Microservicio-Gestion-Publicaiones',
+            demoLabel: 'Ver repositorio'
+        },
+        en: {
+            summary: 'Distributed architecture with decoupled services and scalability-first design.',
+            bullets: ['API Gateway, service discovery, and domain-based components.', 'Container-ready foundations for orchestrated deployments.', 'Built to keep responsibilities isolated per microservice.'],
+            repo: 'https://github.com/Jairo977/Microservicio-Gestion-Publicaiones',
+            demoLabel: 'View repository'
+        }
+    },
+    java: {
+        es: {
+            summary: 'Servicios Java orientados a integración empresarial y contratos robustos.',
+            bullets: ['Implementación de servicios SOAP para interoperabilidad.', 'Estructura clara para validaciones y trazabilidad.', 'Preparado para escenarios corporativos tradicionales.'],
+            repo: 'https://github.com/Jairo977/EnvioExpressSOAP',
+            demoLabel: 'Ver repositorio'
+        },
+        en: {
+            summary: 'Java services focused on enterprise integration and robust service contracts.',
+            bullets: ['SOAP service implementation for interoperability.', 'Clear structure for validation and traceability.', 'Prepared for traditional enterprise environments.'],
+            repo: 'https://github.com/Jairo977/EnvioExpressSOAP',
+            demoLabel: 'View repository'
+        }
+    },
+    biometric: {
+        es: {
+            summary: 'Sistema de control de asistencia con enfoque en seguridad e identificación.',
+            bullets: ['Registro y control de eventos de asistencia.', 'Diseño orientado a entornos institucionales.', 'Integración de frontend y lógica de verificación.'],
+            repo: 'https://github.com/Jairo977/Control-asistencia-Biometrico',
+            demoLabel: 'Ver repositorio'
+        },
+        en: {
+            summary: 'Attendance control system focused on security and identity verification.',
+            bullets: ['Attendance event tracking and registration flow.', 'Built for institutional and administrative contexts.', 'Integrated frontend and verification logic.'],
+            repo: 'https://github.com/Jairo977/Control-asistencia-Biometrico',
+            demoLabel: 'View repository'
+        }
+    }
+};
+
 // --- Translation Helpers ---
 function getNestedTranslation(obj, keyPath) {
     if (!keyPath) return undefined;
@@ -443,6 +530,57 @@ function initMobileMenu() {
     // No additional initialization needed
 }
 
+function initMobileIconNav() {
+    const nav = document.getElementById('mobileIconNav');
+    if (!nav) return;
+
+    const sectionItems = Array.from(nav.querySelectorAll('.mobile-icon-nav__item[data-section]'));
+    if (!sectionItems.length) return;
+
+    const trackedSections = sectionItems
+        .map(item => ({ item, section: document.getElementById(item.dataset.section) }))
+        .filter(entry => entry.section);
+
+    if (!trackedSections.length) return;
+
+    const setActive = (sectionId) => {
+        sectionItems.forEach(item => {
+            item.classList.toggle('active', item.dataset.section === sectionId);
+        });
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        const visible = entries
+            .filter(entry => entry.isIntersecting)
+            .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+
+        if (visible.length) {
+            setActive(visible[0].target.id);
+        }
+    }, {
+        threshold: [0.25, 0.5, 0.75],
+        rootMargin: '-42% 0px -42% 0px'
+    });
+
+    trackedSections.forEach(entry => observer.observe(entry.section));
+
+    nav.querySelectorAll('.mobile-icon-nav__item').forEach(link => {
+        link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+            if (!href || !href.startsWith('#')) return;
+
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (!target) return;
+
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            if (link.dataset.section) setActive(link.dataset.section);
+        });
+    });
+
+    setActive('hero');
+}
+
 // --- Scroll to Top ---
 function initScrollToTop() {
     const btn = document.getElementById('scroll-to-top');
@@ -528,7 +666,7 @@ function initFormHandling() {
 
             // Crear la URL y abrirla
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(text)}`;
-            window.open(whatsappUrl, '_blank');
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
         });
     }
 }
@@ -557,6 +695,7 @@ function openProjectModal(projectKey) {
     const modal = new bootstrap.Modal(document.getElementById('projectModal'));
     const title = document.getElementById('modalTitle');
     const body = document.getElementById('modalBody');
+    const lang = PortfolioState.currentLanguage === 'en' ? 'en' : 'es';
 
     if (title) {
         const projectTitle = getNestedTranslation(translations[PortfolioState.currentLanguage], `projects.items.${projectKey}.title`);
@@ -564,7 +703,22 @@ function openProjectModal(projectKey) {
     }
 
     if (body) {
-        body.innerHTML = `<p>${PortfolioState.currentLanguage === 'es' ? 'Detalles del proyecto disponibles pronto.' : 'Project details coming soon.'}</p>`;
+        const details = projectModalDetails[projectKey]?.[lang];
+        if (details) {
+            const bullets = details.bullets.map(item => `<li>${item}</li>`).join('');
+            body.innerHTML = `
+                <p class="mb-3">${details.summary}</p>
+                <ul class="mb-4">${bullets}</ul>
+                <a href="${details.repo}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                    <i data-lucide="github" class="me-2"></i>${details.demoLabel}
+                </a>
+            `;
+            if (typeof lucide !== 'undefined' && lucide.createIcons) {
+                lucide.createIcons();
+            }
+        } else {
+            body.innerHTML = `<p>${lang === 'es' ? 'Detalles del proyecto disponibles pronto.' : 'Project details coming soon.'}</p>`;
+        }
     }
 
     modal.show();
@@ -625,6 +779,7 @@ function initAll() {
     initLoadingScreen();
     initThemeToggle();
     initMobileMenu();
+    initMobileIconNav();
     initScrollToTop();
     initFormHandling();
     initStatCounters();
