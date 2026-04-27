@@ -1,0 +1,24 @@
+{
+  "name": "portafolio-jairo",
+  "version": "1.0.0",
+  "description": "Portafolio personal de **Jairo Wladimir Ruiz Saenz**, desarrollado como sitio estático y publicado en GitHub Pages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jairo977/Jairo977.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Jairo977/Jairo977.github.io/issues"
+  },
+  "homepage": "https://github.com/Jairo977/Jairo977.github.io#readme",
+  "devDependencies": {
+    "playwright": "^1.59.1"
+  }
+}

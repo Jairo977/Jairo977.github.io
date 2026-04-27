@@ -695,8 +695,17 @@ function initStatCounters() {
     });
 }
 
+function hideModalIfOpen(modalId) {
+    const el = document.getElementById(modalId);
+    if (!el || !el.classList.contains('show')) return;
+    const instance = bootstrap.Modal.getInstance(el) || new bootstrap.Modal(el);
+    instance.hide();
+}
+
 // --- Project Modal ---
 function openProjectModal(projectKey) {
+    hideModalIfOpen('sitePreviewModal');
+
     const modal = new bootstrap.Modal(document.getElementById('projectModal'));
     const title = document.getElementById('modalTitle');
     const body = document.getElementById('modalBody');
@@ -715,12 +724,9 @@ function openProjectModal(projectKey) {
                 <p class="mb-3">${details.summary}</p>
                 <ul class="mb-4">${bullets}</ul>
                 <a href="${details.repo}" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                    <i data-lucide="github" class="me-2"></i>${details.demoLabel}
+                    <i class="bi bi-github me-2"></i>${details.demoLabel}
                 </a>
             `;
-            if (typeof lucide !== 'undefined' && lucide.createIcons) {
-                lucide.createIcons();
-            }
         } else {
             body.innerHTML = `<p>${lang === 'es' ? 'Detalles del proyecto disponibles pronto.' : 'Project details coming soon.'}</p>`;
         }
@@ -731,6 +737,8 @@ function openProjectModal(projectKey) {
 
 // --- Site Preview (iframe with fallback) ---
 function openSitePreview(url, title) {
+    hideModalIfOpen('projectModal');
+
     const modalEl = document.getElementById('sitePreviewModal');
     const iframe = document.getElementById('sitePreviewIframe');
     const fallback = document.getElementById('sitePreviewFallback');
