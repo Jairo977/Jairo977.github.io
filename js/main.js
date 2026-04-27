@@ -27,8 +27,8 @@ const translations = {
         },
         hero: {
             title: 'Jairo Wladimir Ruiz Saenz',
-            subtitle: 'Desarrollador Full-Stack | Análisis de Datos',
-            description: 'Especializado en TypeScript/JavaScript, Python, Power BI y microservicios. Estudiante de Ingeniería en TI en ESPE con experiencia avanzada en desarrollo y análisis de datos empresariales.',
+            subtitle: 'Desarrollador Full-Stack | Inteligencia de Datos y Automatización',
+            description: 'Especializado en TypeScript/JavaScript, Python, Power BI y microservicios. Egresado de la carrera de TICs en la Universidad de las Fuerzas Armadas ESPE. Diseño y construyo soluciones web y de datos orientadas a resultados medibles para negocio.',
             repos: 'Repositorios',
             contributions: 'Contribuciones',
             experience: 'Años Experiencia',
@@ -37,9 +37,9 @@ const translations = {
         },
         about: {
             title: 'Sobre Mí',
-            description1: 'Soy un desarrollador Full-Stack con especialización en análisis de datos, egresado de Ingeniería en Tecnologías de la Información en la Universidad de las Fuerzas Armadas ESPE.',
-            description2: 'Mi pasión por el desarrollo tecnológico se combina con una sólida experiencia en análisis de datos y visualización. Conocimiento avanzado en Python (98%) y Power BI (98%), desarrollo aplicaciones escalables que transforman datos en insights accionables.',
-            description3: 'Mi enfoque combina fundamentos académicos sólidos con experiencia práctica en tecnologías modernas. Especializado en TypeScript (90%), JavaScript (85%), y arquitecturas de microservicios, siempre buscando soluciones eficientes y escalables.',
+            description1: 'Soy desarrollador Full-Stack y analista de datos, egresado de la carrera de TICs en la Universidad de las Fuerzas Armadas ESPE. Me enfoco en productos digitales sólidos, escalables y listos para producción.',
+            description2: 'Combino dominio técnico en Python (98%) y Power BI (98%) con enfoque estratégico de negocio para transformar datos en decisiones claras, tableros ejecutivos y mejoras operativas reales.',
+            description3: 'Trabajo con TypeScript (90%), JavaScript (85%) y arquitecturas de microservicios para construir plataformas mantenibles, seguras y con alto rendimiento, desde la idea hasta la implementación final.',
             'highlights-fullstack': 'Full-Stack',
             'highlights-dataAnalysis': 'Data Analysis',
             'highlights-microservices': 'Microservices',
@@ -47,7 +47,7 @@ const translations = {
         },
         experience: {
             title: 'Experiencia Profesional',
-            description: 'Mi trayectoria profesional y académica en el desarrollo tecnológico.',
+            description: 'Trayectoria profesional enfocada en desarrollo tecnológico, automatización y soluciones digitales de alto impacto.',
             jobs: {
                 ticAnalyst: {
                     title: 'Analista de TIC (Prácticas Preprofesionales)',
@@ -62,12 +62,12 @@ const translations = {
                 freelancer: {
                     title: 'Desarrollador Full-Stack',
                     company: 'Proyectos Independientes',
-                    description: 'Desarrollo de aplicaciones web completas usando TypeScript, JavaScript y Python. Implementación de sistemas CRUD, microservicios y análisis de datos empresariales.'
+                    description: 'Desarrollo de aplicaciones web end-to-end con TypeScript, JavaScript y Python. Implementación de sistemas CRUD, microservicios y analítica empresarial con enfoque en estabilidad, escalabilidad y valor de negocio.'
                 },
                 engineering: {
-                    title: 'Ingeniería en Tecnologías de la Información',
+                    title: 'Egresado en Tecnologías de la Información (TICs)',
                     company: 'Universidad de las Fuerzas Armadas ESPE',
-                    description: 'Formación académica especializada en desarrollo de software, sistemas de información y tecnologías emergentes.'
+                    description: 'Formación integral en ingeniería de software, sistemas de información y arquitectura tecnológica aplicada a entornos reales.'
                 },
                 commercial: {
                     title: 'Asistente Comercial',
@@ -76,14 +76,14 @@ const translations = {
                 },
                 biometric: {
                     title: 'Desarrollo de Sistemas Biométricos',
-                    company: 'Proyectos Académicos',
+                    company: 'Proyectos de Especialización',
                     description: 'Implementación de sistemas de control de asistencia con integración biométrica. Desarrollo de soluciones de seguridad y autenticación avanzada.'
                 }
             }
         },
         projects: {
             title: 'Proyectos Destacados',
-            description: 'Soluciones tecnológicas innovadoras que demuestran expertise en desarrollo y análisis de datos.',
+            description: 'Soluciones tecnológicas diseñadas para resolver problemas reales, optimizar procesos y generar resultados medibles.',
             items: {
                 powerbi: { title: 'Dashboard Power BI Empresarial' },
                 typescript: { title: 'Sistema de Gestión Avanzado' },
@@ -108,15 +108,15 @@ const translations = {
         },
         skills: {
             title: 'Habilidades Técnicas',
-            description: 'Expertise técnico respaldado por experiencia práctica y proyectos reales.'
+            description: 'Capacidades técnicas aplicadas en proyectos reales con estándares profesionales de calidad, rendimiento y escalabilidad.'
         },
         certifications: {
             title: 'Certificaciones y Logros',
-            description: 'Reconocimientos y certificaciones que validan mi expertise técnico.',
+            description: 'Formación y certificaciones que respaldan mi perfil técnico y mi capacidad de ejecución en proyectos exigentes.',
             items: {
-                'engineering-title': 'Ingeniería en TI',
+                'engineering-title': 'Egresado en TICs',
                 'engineering-issuer': 'Universidad de las Fuerzas Armadas ESPE',
-                'engineering-description': 'Título profesional en Ingeniería en Tecnologías de la Información con especialización en desarrollo de software y análisis de datos.',
+                'engineering-description': 'Egresado de la carrera de Tecnologías de la Información con enfoque en desarrollo de software, arquitectura y analítica de datos.',
                 'powerbi-title': 'Power BI Specialist',
                 'powerbi-issuer': 'Microsoft Certified',
                 'powerbi-description': 'Certificación oficial en Power BI para desarrollo de dashboards empresariales y análisis avanzado de datos.',
@@ -136,7 +136,7 @@ const translations = {
         },
         contact: {
             title: 'Trabajemos Juntos',
-            description: '¿Tienes un proyecto interesante? Estoy disponible para colaborar en soluciones tecnológicas innovadoras.',
+            description: 'Si tienes una idea, una plataforma por mejorar o un reto técnico, puedo ayudarte a convertirlo en una solución digital sólida y bien ejecutada.',
             form: {
                 name: 'Nombre completo',
                 email: 'Correo electrónico',
@@ -145,7 +145,7 @@ const translations = {
             }
         },
         footer: {
-            description: 'Desarrollador Full-Stack especializado en análisis de datos y tecnologías modernas.',
+            description: 'Desarrollador Full-Stack y analista de datos, egresado de TICs en ESPE, enfocado en crear soluciones digitales que combinan calidad técnica y resultados de negocio.',
             quickLinks: 'Enlaces Rápidos',
             connect: 'Conectemos',
             location: 'Quito-Sangolquí, Ecuador',
@@ -169,8 +169,8 @@ const translations = {
         },
         hero: {
             title: 'Jairo Wladimir Ruiz Saenz',
-            subtitle: 'Full-Stack Developer | Data Analysis',
-            description: 'Specialized in TypeScript/JavaScript, Python, Power BI and microservices. IT Engineering student at ESPE with advanced experience in development and business data analysis.',
+            subtitle: 'Full-Stack Developer | Data Intelligence & Automation',
+            description: 'Specialized in TypeScript/JavaScript, Python, Power BI, and microservices. Graduate in ICT from the Armed Forces University ESPE, focused on delivering web and data solutions that drive measurable business outcomes.',
             repos: 'Repositories',
             contributions: 'Contributions',
             experience: 'Years Experience',
@@ -179,9 +179,9 @@ const translations = {
         },
         about: {
             title: 'About Me',
-            description1: 'I am a Full-Stack developer with specialization in data analysis, graduated from Engineering in Information Technologies from the Armed Forces University ESPE.',
-            description2: 'My passion for technological development is combined with solid experience in data analysis and visualization. Advanced knowledge in Python (98%) and Power BI (98%), developing scalable applications that transform data into actionable insights.',
-            description3: 'My approach combines solid academic foundations with practical experience in modern technologies. Specialized in TypeScript (90%), JavaScript (85%), and microservice architectures, always seeking efficient and scalable solutions.',
+            description1: 'I am a Full-Stack developer and data analyst, ICT graduate from the Armed Forces University ESPE. I build solid, scalable, production-ready digital products.',
+            description2: 'I combine advanced Python (98%) and Power BI (98%) expertise with a business-oriented approach to turn data into clear decisions, executive dashboards, and real operational improvements.',
+            description3: 'I work with TypeScript (90%), JavaScript (85%), and microservice architectures to deliver maintainable, secure, high-performance platforms from concept to deployment.',
             'highlights-fullstack': 'Full-Stack',
             'highlights-dataAnalysis': 'Data Analysis',
             'highlights-microservices': 'Microservices',
@@ -189,7 +189,7 @@ const translations = {
         },
         experience: {
             title: 'Professional Experience',
-            description: 'My professional and academic trajectory in technological development.',
+            description: 'Professional trajectory focused on technological development, automation, and high-impact digital solutions.',
             jobs: {
                 ticAnalyst: {
                     title: 'ICT Analyst (Pre-Professional Internship)',
@@ -204,12 +204,12 @@ const translations = {
                 freelancer: {
                     title: 'Full-Stack Developer',
                     company: 'Independent Projects',
-                    description: 'Development of complete web applications using TypeScript, JavaScript and Python. Implementation of CRUD systems, microservices and business data analysis.'
+                    description: 'End-to-end web application development using TypeScript, JavaScript, and Python. Delivery of CRUD systems, microservices, and business analytics with a focus on stability, scalability, and business value.'
                 },
                 engineering: {
-                    title: 'Engineering in Information Technologies',
+                    title: 'ICT Graduate',
                     company: 'Armed Forces University ESPE',
-                    description: 'Specialized academic training in software development, information systems and emerging technologies.'
+                    description: 'Comprehensive training in software engineering, information systems, and real-world technology architecture.'
                 },
                 commercial: {
                     title: 'Commercial Assistant',
@@ -218,14 +218,14 @@ const translations = {
                 },
                 biometric: {
                     title: 'Biometric Systems Development',
-                    company: 'Academic Projects',
+                    company: 'Specialization Projects',
                     description: 'Implementation of attendance control systems with biometric integration. Development of security and advanced authentication solutions.'
                 }
             }
         },
         projects: {
             title: 'Featured Projects',
-            description: 'Innovative technological solutions that demonstrate expertise in development and data analysis.',
+            description: 'Technology solutions designed to solve real problems, optimize processes, and produce measurable results.',
             items: {
                 powerbi: { title: 'Corporate Power BI Dashboard' },
                 typescript: { title: 'Advanced Management System' },
@@ -250,15 +250,15 @@ const translations = {
         },
         skills: {
             title: 'Technical Skills',
-            description: 'Technical expertise backed by practical experience and real projects.'
+            description: 'Technical capabilities proven through real projects with professional standards of quality, performance, and scalability.'
         },
         certifications: {
             title: 'Certifications and Achievements',
-            description: 'Recognition and certifications that validate my technical expertise.',
+            description: 'Education and certifications that support my technical profile and execution capacity for demanding projects.',
             items: {
-                'engineering-title': 'Engineering in IT',
+                'engineering-title': 'ICT Graduate',
                 'engineering-issuer': 'Armed Forces University ESPE',
-                'engineering-description': 'Professional degree in Engineering in Information Technologies with specialization in software development and data analysis.',
+                'engineering-description': 'Graduate in Information and Communication Technologies focused on software development, architecture, and data analytics.',
                 'powerbi-title': 'Power BI Specialist',
                 'powerbi-issuer': 'Microsoft Certified',
                 'powerbi-description': 'Official certification in Power BI for development of business dashboards and advanced data analysis.',
@@ -278,7 +278,7 @@ const translations = {
         },
         contact: {
             title: "Let's Work Together",
-            description: 'Do you have an interesting project? I am available to collaborate on innovative technological solutions.',
+            description: 'If you have a new idea, a platform to improve, or a technical challenge, I can help turn it into a robust and well-executed digital solution.',
             form: {
                 name: 'Full name',
                 email: 'Email address',
@@ -287,7 +287,7 @@ const translations = {
             }
         },
         footer: {
-            description: 'Full-Stack developer specialized in data analysis and modern technologies.',
+            description: 'Full-Stack developer and data analyst, ICT graduate from ESPE, focused on building digital solutions that combine technical quality with business impact.',
             quickLinks: 'Quick Links',
             connect: 'Let\'s Connect',
             location: 'Quito-Sangolquí, Ecuador',
@@ -336,13 +336,13 @@ const projectModalDetails = {
     python: {
         es: {
             summary: 'Implementaciones Python aplicadas a backend, automatización y análisis de datos.',
-            bullets: ['Servicios backend y lógica de negocio con Python.', 'Procesamiento de datos para reportes y validaciones.', 'Estructura académica-profesional lista para expansión.'],
+            bullets: ['Servicios backend y lógica de negocio con Python.', 'Procesamiento de datos para reportes y validaciones.', 'Arquitectura robusta lista para escalamiento en producción.'],
             repo: 'https://github.com/Jairo977/ExamenFInal',
             demoLabel: 'Ver repositorio'
         },
         en: {
             summary: 'Python implementations focused on backend workflows, automation, and data analysis.',
-            bullets: ['Backend services and business logic using Python.', 'Data processing for reporting and validation flows.', 'Academic-professional base ready for further expansion.'],
+            bullets: ['Backend services and business logic using Python.', 'Data processing for reporting and validation flows.', 'Robust architecture ready for production scaling.'],
             repo: 'https://github.com/Jairo977/ExamenFInal',
             demoLabel: 'View repository'
         }
