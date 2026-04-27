@@ -1,6 +1,6 @@
 # Jairo977.github.io - Portafolio Profesional
 
-Portafolio personal de **Jairo Wladimir Ruiz Saenz**, desarrollado como sitio estático y publicado en GitHub Pages.
+Portafolio personal de **Jairo Ruiz**, desarrollado como sitio estático y publicado en GitHub Pages.
 
 ## Vista general
 
@@ -53,4 +53,3 @@ Este repositorio está preparado para desplegarse en **GitHub Pages** desde la r
 - Protección en enlaces externos con `rel="noopener noreferrer"`.
 - Modal de proyectos con contenido real por proyecto (ya no placeholder).
 - Implementación de barra de navegación móvil por iconos con estado activo por sección.
-

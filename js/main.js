@@ -26,7 +26,7 @@ const translations = {
             lightMode: 'Modo Claro'
         },
         hero: {
-            title: 'Jairo Wladimir Ruiz Saenz',
+            title: 'Jairo Ruiz',
             subtitle: 'Desarrollador Full-Stack | Inteligencia de Datos y Automatización',
             description: 'Especializado en TypeScript/JavaScript, Python, Power BI y microservicios. Egresado de la carrera de TICs en la Universidad de las Fuerzas Armadas ESPE. Diseño y construyo soluciones web y de datos orientadas a resultados medibles para negocio.',
             repos: 'Repositorios',
@@ -159,7 +159,7 @@ const translations = {
             quickLinks: 'Enlaces Rápidos',
             connect: 'Conectemos',
             location: 'Quito-Sangolquí, Ecuador',
-            copyright: '© 2025 Jairo Wladimir Ruiz Saenz. Todos los derechos reservados.',
+            copyright: '© 2025 Jairo Ruiz. Todos los derechos reservados.',
             builtWith: 'Construido con TypeScript, CSS3 y Bootstrap 5.'
         }
     },
@@ -178,7 +178,7 @@ const translations = {
             lightMode: 'Light Mode'
         },
         hero: {
-            title: 'Jairo Wladimir Ruiz Saenz',
+            title: 'Jairo Ruiz',
             subtitle: 'Full-Stack Developer | Data Intelligence & Automation',
             description: 'Specialized in TypeScript/JavaScript, Python, Power BI, and microservices. Graduate in ICT from the Armed Forces University ESPE, focused on delivering web and data solutions that drive measurable business outcomes.',
             repos: 'Repositories',
@@ -311,7 +311,7 @@ const translations = {
             quickLinks: 'Quick Links',
             connect: 'Let\'s Connect',
             location: 'Quito-Sangolquí, Ecuador',
-            copyright: '© 2025 Jairo Wladimir Ruiz Saenz. All rights reserved.',
+            copyright: '© 2025 Jairo Ruiz. All rights reserved.',
             builtWith: 'Built with HTML5, CSS3 and Bootstrap 5.'
         }
     }
