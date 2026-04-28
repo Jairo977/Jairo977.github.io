@@ -45,6 +45,57 @@ const translations = {
             'highlights-microservices': 'Automatización',
             'highlights-security': 'Arquitectura'
         },
+        services: {
+            title: 'Servicios Profesionales',
+            description: 'Acompaño proyectos de punta a punta: desde diseño técnico y desarrollo, hasta datos, BI, automatización y operación.',
+            items: {
+                fullstack: {
+                    title: 'Desarrollo Full-Stack End-to-End',
+                    description: 'Construcción de aplicaciones web robustas con frontend, backend, APIs, autenticación y despliegue.'
+                },
+                data: {
+                    title: 'Data & BI Operativo',
+                    description: 'Modelado y procesamiento de datos, tableros Power BI y KPIs ejecutivos conectados a la operación.'
+                },
+                automation: {
+                    title: 'Automatización e Integraciones',
+                    description: 'Integración entre sistemas, flujos automáticos y procesos de web scraping para acelerar decisiones.'
+                },
+                optimization: {
+                    title: 'Optimización y Escalado',
+                    description: 'Mejora de rendimiento, SEO técnico, estabilidad y arquitectura para crecimiento sostenible.'
+                }
+            }
+        },
+        caseStudies: {
+            title: 'Casos de Éxito',
+            description: 'Implementaciones reales con enfoque técnico y de negocio: problema, solución e impacto.',
+            labels: {
+                challenge: 'Reto',
+                solution: 'Solución',
+                impact: 'Impacto'
+            },
+            items: {
+                inversef: {
+                    title: 'Inversef: Plataforma + Scraping',
+                    challenge: 'Información de remates dispersa y difícil de consolidar para análisis rápido.',
+                    solution: 'Desarrollo full-stack con búsquedas avanzadas, panel administrativo y pipelines de web scraping.',
+                    impact: 'Centralización de oportunidades y mayor velocidad para evaluar y priorizar casos.'
+                },
+                nutrifamili: {
+                    title: 'NutriFamili: Web + SEO',
+                    challenge: 'Necesidad de presencia digital profesional, rápida y orientada a captación de usuarios.',
+                    solution: 'Construcción de sitio responsivo, estructura de contenidos y optimización SEO técnica.',
+                    impact: 'Mejor posicionamiento orgánico y experiencia clara para convertir visitas en contactos.'
+                },
+                facturas: {
+                    title: 'Facturas: Operación Comercial',
+                    challenge: 'Procesos de facturación y control comercial con alta fricción operativa.',
+                    solution: 'Plataforma de gestión con backend en Django, API y generación de documentos operativos.',
+                    impact: 'Mayor control del flujo comercial y trazabilidad de datos para toma de decisiones.'
+                }
+            }
+        },
         experience: {
             title: 'Experiencia Profesional',
             description: 'Trayectoria profesional enfocada en desarrollo tecnológico, automatización y soluciones digitales de alto impacto.',
@@ -118,7 +169,17 @@ const translations = {
         },
         skills: {
             title: 'Habilidades Técnicas',
-            description: 'Capacidades técnicas aplicadas en proyectos reales con estándares profesionales de calidad, rendimiento y escalabilidad.'
+            description: 'Capacidades técnicas aplicadas en proyectos reales con estándares profesionales de calidad, rendimiento y escalabilidad.',
+            specializationsTitle: 'Especializaciones',
+            evidence: {
+                title: 'Evidencia Técnica por Entregables',
+                powerbi: 'Dashboards ejecutivos para KPIs comerciales y operativos con lectura accionable.',
+                python: 'APIs, lógica de negocio y automatizaciones aplicadas a procesos reales.',
+                typescript: 'Aplicaciones CRUD y módulos reutilizables con enfoque de mantenibilidad.',
+                architecture: 'Diseño de soluciones con microservicios, contratos API e integración de sistemas.',
+                automation: 'Flujos automáticos y web scraping para reducir tareas manuales y acelerar decisiones.',
+                delivery: 'Participación de extremo a extremo: levantamiento, desarrollo, despliegue y mejora continua.'
+            }
         },
         certifications: {
             title: 'Certificaciones y Logros',
@@ -197,6 +258,57 @@ const translations = {
             'highlights-microservices': 'Automation',
             'highlights-security': 'Architecture'
         },
+        services: {
+            title: 'Professional Services',
+            description: 'I support projects end-to-end: from technical design and development to data, BI, automation, and operations.',
+            items: {
+                fullstack: {
+                    title: 'End-to-End Full-Stack Development',
+                    description: 'Robust web applications with frontend, backend, APIs, authentication, and deployment.'
+                },
+                data: {
+                    title: 'Operational Data & BI',
+                    description: 'Data modeling and processing, Power BI dashboards, and executive KPIs connected to operations.'
+                },
+                automation: {
+                    title: 'Automation & Integrations',
+                    description: 'System integrations, automated workflows, and web scraping processes to accelerate decisions.'
+                },
+                optimization: {
+                    title: 'Optimization & Scaling',
+                    description: 'Performance, technical SEO, stability, and architecture improvements for sustainable growth.'
+                }
+            }
+        },
+        caseStudies: {
+            title: 'Case Studies',
+            description: 'Real implementations with technical and business focus: challenge, solution, and impact.',
+            labels: {
+                challenge: 'Challenge',
+                solution: 'Solution',
+                impact: 'Impact'
+            },
+            items: {
+                inversef: {
+                    title: 'Inversef: Platform + Scraping',
+                    challenge: 'Scattered auctions data that was difficult to consolidate for quick analysis.',
+                    solution: 'Full-stack development with advanced search, admin dashboard, and web scraping pipelines.',
+                    impact: 'Centralized opportunities and faster evaluation and prioritization workflows.'
+                },
+                nutrifamili: {
+                    title: 'NutriFamili: Web + SEO',
+                    challenge: 'Need for a professional, fast digital presence focused on user acquisition.',
+                    solution: 'Responsive website, clear content structure, and technical SEO optimization.',
+                    impact: 'Stronger organic positioning and clearer user journeys to convert visits into leads.'
+                },
+                facturas: {
+                    title: 'Invoices: Commercial Operations',
+                    challenge: 'High-friction billing and commercial control processes.',
+                    solution: 'Management platform with Django backend, API, and operational document generation.',
+                    impact: 'Better commercial flow control and data traceability for decision-making.'
+                }
+            }
+        },
         experience: {
             title: 'Professional Experience',
             description: 'Professional trajectory focused on technological development, automation, and high-impact digital solutions.',
@@ -270,7 +382,17 @@ const translations = {
         },
         skills: {
             title: 'Technical Skills',
-            description: 'Technical capabilities proven through real projects with professional standards of quality, performance, and scalability.'
+            description: 'Technical capabilities proven through real projects with professional standards of quality, performance, and scalability.',
+            specializationsTitle: 'Specializations',
+            evidence: {
+                title: 'Technical Evidence by Deliverables',
+                powerbi: 'Executive dashboards for commercial and operational KPIs with actionable insights.',
+                python: 'APIs, business logic, and automation applied to real workflows.',
+                typescript: 'CRUD applications and reusable modules with maintainability-focused architecture.',
+                architecture: 'Solution design with microservices, API contracts, and systems integration.',
+                automation: 'Automated flows and web scraping to reduce manual effort and speed up decisions.',
+                delivery: 'End-to-end ownership: discovery, development, deployment, and continuous improvement.'
+            }
         },
         certifications: {
             title: 'Certifications and Achievements',

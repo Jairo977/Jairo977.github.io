@@ -7,10 +7,13 @@ Portafolio personal de **Jairo Ruiz**, desarrollado como sitio estático y publi
 - Sitio bilingüe (ES/EN)
 - Modo claro/oscuro con persistencia
 - Posicionamiento profesional integral: Full-Stack + Datos + BI + Automatización
+- Sección de servicios profesionales y casos de éxito (problema → solución → impacto)
+- Habilidades mostradas por evidencia de entregables (sin porcentajes inflados)
 - Secciones: Sobre mí, experiencia, proyectos, habilidades, certificaciones y contacto
 - Formulario de contacto con EmailJS + acción directa por WhatsApp
 - Previsualización de proyectos en modal
 - Navbar móvil de iconos fijo en la parte inferior (mejor UX en teléfonos)
+- CV ATS en español e inglés: `cv/cv-ats-jairo-ruiz-es.md` y `cv/cv-ats-jairo-ruiz-en.md`
 
 ## Stack
 
