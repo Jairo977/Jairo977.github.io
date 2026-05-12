@@ -2588,3 +2588,210 @@ body.dark-mode #about .d-flex.align-items-center.gap-3.p-3.bg-light.rounded-3.bo
     transform: none;
   }
 }
+
+/* ===== Specializations: dynamic capability matrix ===== */
+.specialization-panel {
+  position: relative;
+  padding: 2rem;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.92), rgba(248, 250, 252, 0.86)),
+    radial-gradient(circle at top right, rgba(14, 165, 233, 0.14), transparent 42%);
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+  overflow: hidden;
+}
+
+.specialization-heading {
+  display: grid;
+  gap: 0.35rem;
+  max-width: 720px;
+  margin-bottom: 1.5rem;
+}
+
+.specialization-heading h3 {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.specialization-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr);
+  gap: 1rem;
+}
+
+.specialization-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  min-height: 100%;
+  padding: 1.2rem;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(255, 255, 255, 0.82);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.specialization-item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(14, 165, 233, 0.45);
+  box-shadow: 0 16px 36px rgba(14, 165, 233, 0.14);
+}
+
+.specialization-item--primary {
+  align-content: start;
+  padding: 1.45rem;
+  background:
+    linear-gradient(145deg, rgba(15, 23, 42, 0.96), rgba(14, 116, 144, 0.92)),
+    radial-gradient(circle at top right, rgba(56, 189, 248, 0.34), transparent 45%);
+  color: #f8fafc;
+  border-color: rgba(125, 211, 252, 0.22);
+}
+
+.specialization-icon {
+  width: 44px;
+  height: 44px;
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid rgba(14, 165, 233, 0.24);
+  background: rgba(14, 165, 233, 0.1);
+}
+
+.specialization-icon .lucide {
+  width: 1.35rem;
+  height: 1.35rem;
+  color: #0ea5e9 !important;
+}
+
+.specialization-item--primary .specialization-icon {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.specialization-item--primary .specialization-icon .lucide {
+  color: #7dd3fc !important;
+}
+
+.specialization-kicker {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #0369a1;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.specialization-item h4 {
+  margin-bottom: 0.45rem;
+  color: #0f172a;
+  font-size: 1.05rem;
+  line-height: 1.25;
+}
+
+.specialization-item p {
+  margin-bottom: 0.9rem;
+  color: #64748b;
+  font-size: 0.94rem;
+  line-height: 1.55;
+}
+
+.specialization-item--primary h4,
+.specialization-item--primary p,
+.specialization-item--primary .specialization-kicker {
+  color: #f8fafc;
+}
+
+.specialization-item--primary p {
+  color: #cbd5e1;
+}
+
+.tool-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.tool-row span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0.3rem 0.62rem;
+  border: 1px solid rgba(14, 165, 233, 0.18);
+  background: rgba(14, 165, 233, 0.08);
+  color: #075985;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.specialization-item--primary .tool-row span {
+  border-color: rgba(125, 211, 252, 0.26);
+  background: rgba(125, 211, 252, 0.12);
+  color: #e0f2fe;
+}
+
+body.dark-mode .specialization-panel {
+  border-color: rgba(56, 189, 248, 0.18);
+  background:
+    linear-gradient(135deg, rgba(8, 17, 31, 0.96), rgba(15, 23, 42, 0.92)),
+    radial-gradient(circle at top right, rgba(14, 165, 233, 0.15), transparent 42%);
+}
+
+body.dark-mode .specialization-item {
+  border-color: rgba(56, 189, 248, 0.16);
+  background: rgba(15, 23, 42, 0.82);
+}
+
+body.dark-mode .specialization-item h4,
+body.dark-mode .specialization-heading h3 {
+  color: #f8fafc;
+  -webkit-text-fill-color: currentColor;
+}
+
+body.dark-mode .specialization-item p,
+body.dark-mode .specialization-heading p {
+  color: #cbd5e1;
+}
+
+body.dark-mode .specialization-kicker {
+  color: #7dd3fc;
+}
+
+body.dark-mode .tool-row span {
+  border-color: rgba(125, 211, 252, 0.24);
+  background: rgba(14, 165, 233, 0.12);
+  color: #e0f2fe;
+}
+
+@media (max-width: 991.98px) {
+  .specialization-panel {
+    padding: 1.25rem;
+  }
+
+  .specialization-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 575.98px) {
+  .specialization-panel {
+    margin-left: -0.25rem;
+    margin-right: -0.25rem;
+    padding: 1rem;
+  }
+
+  .specialization-item {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
+
+  .specialization-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tool-row span {
+    font-size: 0.74rem;
+  }
+}

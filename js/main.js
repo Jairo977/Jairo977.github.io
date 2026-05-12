@@ -27,8 +27,8 @@ const translations = {
         },
         hero: {
             title: 'Jairo Ruiz',
-            subtitle: 'Full-Stack Developer | Infraestructura, Cloud, Redes y Automatización',
-            description: 'Construyo soluciones end-to-end combinando desarrollo web, APIs, servidores Linux, redes, virtualización, cloud y automatizaciones con n8n para conectar procesos reales. Egresado de TICs en la Universidad de las Fuerzas Armadas ESPE.',
+            subtitle: 'Ingeniero Full-Stack e Infraestructura | Automatizaciones y Sistemas Reales',
+            description: 'Construyo sistemas completos: aplicaciones web, APIs, bots, bases de datos, servidores, redes, Docker, Proxmox, VPS, Railway, Azure y automatizaciones con n8n. Mi enfoque es desarrollar, desplegar y operar soluciones que funcionen en producción.',
             repos: 'Repositorios',
             contributions: 'Contribuciones',
             experience: 'Años Experiencia',
@@ -37,9 +37,9 @@ const translations = {
         },
         about: {
             title: 'Sobre Mí',
-            description1: 'Soy Full-Stack Developer y egresado de TICs en la Universidad de las Fuerzas Armadas ESPE.',
-            description2: 'Mi enfoque real está en construir plataformas completas: frontend, backend, APIs, bases de datos, servidores Linux/Ubuntu, redes, Proxmox, cloud y automatizaciones con n8n.',
-            description3: 'Me gusta conectar software, infraestructura y procesos: desde una interfaz web hasta workflows, webhooks e integraciones que reducen trabajo manual y aceleran operaciones.',
+            description1: 'Soy Ingeniero Full-Stack e Infraestructura, egresado de TICs en la Universidad de las Fuerzas Armadas ESPE.',
+            description2: 'Mi enfoque real está en construir plataformas completas: frontend, backend, APIs, bases de datos, servidores Ubuntu, redes, Docker, Proxmox, VPS, Azure, Railway y automatizaciones.',
+            description3: 'Me gusta conectar software, infraestructura y procesos: desde una interfaz web hasta bots, workflows, webhooks, integraciones con IA y consultas directas a bases de datos.',
             'highlights-fullstack': 'Full-Stack',
             'highlights-dataAnalysis': 'Servidores',
             'highlights-microservices': 'Redes',
@@ -48,7 +48,7 @@ const translations = {
         },
         services: {
             title: 'Servicios Profesionales',
-            description: 'Acompaño proyectos de punta a punta: desarrollo Full-Stack, servidores, redes, infraestructura local, cloud, n8n, integraciones y operación.',
+            description: 'Acompaño proyectos de punta a punta: desarrollo Full-Stack, servidores, redes, infraestructura local/cloud, automatizaciones, bots, bases de datos y operación.',
             items: {
                 fullstack: {
                     title: 'Desarrollo Full-Stack End-to-End',
@@ -56,11 +56,11 @@ const translations = {
                 },
                 data: {
                     title: 'Servidores y Redes',
-                    description: 'Administración de entornos Linux/Ubuntu, redes locales, servicios, accesos y continuidad operativa.'
+                    description: 'Administración de Ubuntu Server, VPS, Docker, Proxmox, Railway, Azure, redes, DNS, firewall, VPN, cámaras y servicios en operación.'
                 },
                 automation: {
                     title: 'Automatización e Integraciones',
-                    description: 'Workflows en n8n, webhooks, APIs, scraping e integraciones entre herramientas para eliminar tareas repetitivas y acelerar decisiones.'
+                    description: 'Workflows en n8n, bots de Telegram, consultas a Supabase tipo RAG, Groq, webhooks, APIs y automatización de publicación para redes sociales.'
                 },
                 optimization: {
                     title: 'Optimización y Escalado',
@@ -68,7 +68,7 @@ const translations = {
                 },
                 infra: {
                     title: 'Infraestructura & Cloud',
-                    description: 'Configuración de infraestructura local, virtualización con Proxmox, despliegue de servicios en Azure y automatización de tareas operativas.'
+                    description: 'Configuración de infraestructura local, despliegues en Azure/Railway/VPS, virtualización con Proxmox y puesta en marcha de servicios propios.'
                 }
             }
         },
@@ -108,7 +108,7 @@ const translations = {
                 ticAnalyst: {
                     title: 'Analista de TIC (Prácticas Preprofesionales)',
                     company: 'GAD Municipal de Alausí',
-                    description: 'Desarrollo de un sistema de control de asistencia biométrico con API, backend y frontend en Python (Django). Creación de una API para la gestión de trámites institucionales. Diseño y desarrollo de la página web institucional del Tren de Alausí. Administración de bases de datos en MySQL Server y PostgreSQL.'
+                    description: 'Desarrollo de un sistema de control de asistencia biométrico con API, backend y frontend en Python (Django). Automatización de reportes de asistencia para reducir trabajo manual. Creación de API para trámites institucionales, sitio del Tren de Alausí y administración de bases de datos en MySQL Server y PostgreSQL.'
                 },
                 volunteer: {
                     title: 'Voluntariado – Soporte Técnico',
@@ -182,9 +182,24 @@ const translations = {
                 python: 'APIs, lógica de negocio y automatizaciones aplicadas a procesos reales.',
                 typescript: 'Aplicaciones CRUD y módulos reutilizables con enfoque de mantenibilidad.',
                 architecture: 'Diseño de soluciones con microservicios, contratos API e integración de sistemas.',
-                automation: 'Workflows con n8n, webhooks, scraping e integraciones para reducir trabajo manual y conectar sistemas.',
+                automation: 'n8n, Telegram, Supabase, Groq, webhooks y bots para publicar contenido, consultar datos y conectar sistemas.',
                 delivery: 'Participación de extremo a extremo: levantamiento, desarrollo, despliegue y mejora continua.',
-                infra: 'Administración de servidores Linux/Ubuntu, redes, virtualización con Proxmox y despliegue de servicios en Azure.'
+                infra: 'Ubuntu Server, Docker, Proxmox, VPS propio, Railway, Azure, DNS, firewall, VPN, routers y switches.'
+            },
+            specializations: {
+                intro: 'Capacidades conectadas entre desarrollo Full-Stack, automatización, infraestructura y operación.',
+                automationKicker: 'Automatización',
+                automationTitle: 'n8n, bots e integraciones',
+                automationText: 'Telegram conectado a Supabase, consultas tipo RAG con Groq, publicación social y creación/subida de videos para TikTok con un clic.',
+                productKicker: 'Producto',
+                productTitle: 'Full-Stack moderno',
+                productText: 'Interfaces React/Next, APIs Django/Express, formularios, paneles admin, CRUDs, dashboards y experiencias responsive.',
+                opsKicker: 'Operación',
+                opsTitle: 'Servidores e infraestructura',
+                opsText: 'Despliegues, servicios Docker, redes locales, DNS, firewall, VPN, cámaras y operación en servidor propio, cloud o VPS.',
+                aiKicker: 'IA aplicada',
+                aiTitle: 'IA, datos y bases estructuradas',
+                aiText: 'Diseño de tablas, consultas, CRUD, agentes, modelos LLM, MCP y experiencias tipo RAG sobre datos estructurados.'
             }
         },
         certifications: {
@@ -196,7 +211,7 @@ const translations = {
                 'engineering-description': 'Egresado de la carrera de Tecnologías de la Información con enfoque en desarrollo de software, arquitectura y analítica de datos.',
                 'powerbi-title': 'Infraestructura Local y Cloud',
                 'powerbi-issuer': 'Servidores, redes y cloud',
-                'powerbi-description': 'Administración de servidores Linux/Ubuntu, redes locales, virtualización con Proxmox y despliegue de servicios en Azure.',
+                'powerbi-description': 'Ubuntu Server, Docker, Proxmox, VPS, Railway, Azure, DNS, firewall, VPN, routers, switches y operación de servicios locales.',
                 'python-title': 'Python Data Analyst',
                 'python-issuer': 'Python Institute',
                 'python-description': 'Certificación en análisis de datos con Python, incluyendo pandas, numpy, matplotlib y machine learning básico.',
@@ -222,7 +237,7 @@ const translations = {
             }
         },
         footer: {
-            description: 'Full-Stack Developer con enfoque en servidores, redes, infraestructura local, cloud y automatización con n8n para crear soluciones estables, mantenibles y listas para operar.',
+            description: 'Ingeniero Full-Stack e Infraestructura enfocado en sistemas web, servidores, redes, bases de datos y automatizaciones para crear soluciones reales listas para producción.',
             quickLinks: 'Enlaces Rápidos',
             connect: 'Conectemos',
             location: 'Quito-Sangolquí, Ecuador',
@@ -246,8 +261,8 @@ const translations = {
         },
         hero: {
             title: 'Jairo Ruiz',
-            subtitle: 'Full-Stack Developer | Infrastructure, Cloud, Networks & Automation',
-            description: 'I build end-to-end solutions by combining web development, APIs, Linux servers, networks, virtualization, cloud, and n8n automations to connect real operational processes. ICT graduate from the Armed Forces University ESPE.',
+            subtitle: 'Full-Stack & Infrastructure Engineer | Automation and Real Systems',
+            description: 'I build complete systems: web applications, APIs, bots, databases, servers, networks, Docker, Proxmox, VPS, Railway, Azure, and n8n automations. My focus is developing, deploying, and operating production-ready solutions.',
             repos: 'Repositories',
             contributions: 'Contributions',
             experience: 'Years Experience',
@@ -256,9 +271,9 @@ const translations = {
         },
         about: {
             title: 'About Me',
-            description1: 'I am a Full-Stack Developer and ICT graduate from the Armed Forces University ESPE.',
-            description2: 'My real focus is building complete platforms: frontend, backend, APIs, databases, Linux/Ubuntu servers, networks, Proxmox, cloud, and n8n automations.',
-            description3: 'I connect software, infrastructure, and processes: from web interfaces to workflows, webhooks, and integrations that reduce manual work and accelerate operations.',
+            description1: 'I am a Full-Stack & Infrastructure Engineer and ICT graduate from the Armed Forces University ESPE.',
+            description2: 'My real focus is building complete platforms: frontend, backend, APIs, databases, Ubuntu servers, networks, Docker, Proxmox, VPS, Azure, Railway, and automation.',
+            description3: 'I connect software, infrastructure, and processes: from web interfaces to bots, workflows, webhooks, AI integrations, and direct database queries.',
             'highlights-fullstack': 'Full-Stack',
             'highlights-dataAnalysis': 'Servers',
             'highlights-microservices': 'Networks',
@@ -267,7 +282,7 @@ const translations = {
         },
         services: {
             title: 'Professional Services',
-            description: 'I support projects end-to-end: Full-Stack development, servers, networks, local infrastructure, cloud, n8n, integrations, and operations.',
+            description: 'I support projects end-to-end: Full-Stack development, servers, networks, local and cloud infrastructure, n8n automations, bots, databases, integrations, and operations.',
             items: {
                 fullstack: {
                     title: 'End-to-End Full-Stack Development',
@@ -275,11 +290,11 @@ const translations = {
                 },
                 data: {
                     title: 'Servers and Networks',
-                    description: 'Linux/Ubuntu administration, local networks, services, access management, and operational continuity.'
+                    description: 'Ubuntu Server, VPS, Docker, Proxmox, Railway, Azure, DNS, firewall, VPN, cameras, and services in operation.'
                 },
                 automation: {
                     title: 'Automation & Integrations',
-                    description: 'n8n workflows, webhooks, APIs, scraping, and tool integrations to remove repetitive work and accelerate decisions.'
+                    description: 'n8n workflows, Telegram bots, Supabase RAG-style queries, Groq, webhooks, APIs, and social publishing automation.'
                 },
                 optimization: {
                     title: 'Optimization & Scaling',
@@ -287,7 +302,7 @@ const translations = {
                 },
                 infra: {
                     title: 'Infrastructure & Cloud',
-                    description: 'Local infrastructure setup, Proxmox virtualization, Azure service deployment, and operational task automation.'
+                    description: 'Local infrastructure setup, Azure/Railway/VPS deployments, Proxmox virtualization, and service operations.'
                 }
             }
         },
@@ -327,7 +342,7 @@ const translations = {
                 ticAnalyst: {
                     title: 'ICT Analyst (Pre-Professional Internship)',
                     company: 'Municipal GAD of Alausí',
-                    description: 'Development of a biometric attendance control system with API, backend and frontend in Python (Django). Creation of an API for institutional procedure management. Design and development of the institutional website for the Alausí Train.'
+                    description: 'Development of a biometric attendance control system with API, backend and frontend in Python (Django). Automation of attendance reports to reduce manual work. Creation of an API for institutional procedure management, Alausí Train website, and MySQL/PostgreSQL database administration.'
                 },
                 volunteer: {
                     title: 'Volunteering – Technical Support',
@@ -401,9 +416,24 @@ const translations = {
                 python: 'APIs, business logic, and automation applied to real workflows.',
                 typescript: 'CRUD applications and reusable modules with maintainability-focused architecture.',
                 architecture: 'Solution design with microservices, API contracts, and systems integration.',
-                automation: 'n8n workflows, webhooks, scraping, and integrations to reduce manual work and connect systems.',
+                automation: 'n8n, Telegram, Supabase, Groq, webhooks, and bots to publish content, query data, and connect systems.',
                 delivery: 'End-to-end ownership: discovery, development, deployment, and continuous improvement.',
-                infra: 'Linux/Ubuntu server administration, networks, Proxmox virtualization, and Azure cloud service deployment.'
+                infra: 'Ubuntu Server, Docker, Proxmox, own VPS, Railway, Azure, DNS, firewall, VPN, routers, and switches.'
+            },
+            specializations: {
+                intro: 'Connected capabilities across Full-Stack development, automation, infrastructure, and operations.',
+                automationKicker: 'Automation',
+                automationTitle: 'n8n, bots and integrations',
+                automationText: 'Telegram connected to Supabase, Groq-supported RAG-style queries, social publishing, and one-click TikTok video creation/upload flows.',
+                productKicker: 'Product',
+                productTitle: 'Modern Full-Stack',
+                productText: 'React/Next interfaces, Django/Express APIs, forms, admin panels, CRUDs, dashboards, and responsive experiences.',
+                opsKicker: 'Operations',
+                opsTitle: 'Servers and infrastructure',
+                opsText: 'Deployments, Docker services, local networks, DNS, firewall, VPN, cameras, and operations on own servers, cloud, or VPS.',
+                aiKicker: 'Applied AI',
+                aiTitle: 'AI, data and structured databases',
+                aiText: 'Table design, queries, CRUD, agents, LLM models, MCP, and RAG-style experiences over structured data.'
             }
         },
         certifications: {
@@ -415,7 +445,7 @@ const translations = {
                 'engineering-description': 'Graduate in Information and Communication Technologies focused on software development, architecture, and data analytics.',
                 'powerbi-title': 'Local and Cloud Infrastructure',
                 'powerbi-issuer': 'Servers, networks, and cloud',
-                'powerbi-description': 'Linux/Ubuntu server administration, local networks, Proxmox virtualization, and Azure cloud service deployment.',
+                'powerbi-description': 'Ubuntu Server, Docker, Proxmox, VPS, Railway, Azure, DNS, firewall, VPN, routers, switches, and local service operation.',
                 'python-title': 'Python Data Analyst',
                 'python-issuer': 'Python Institute',
                 'python-description': 'Certification in data analysis with Python, including pandas, numpy, matplotlib and basic machine learning.',
@@ -441,7 +471,7 @@ const translations = {
             }
         },
         footer: {
-            description: 'Full-Stack Developer focused on servers, networks, local infrastructure, cloud, and n8n automation for stable, maintainable, operation-ready solutions.',
+            description: 'Full-Stack & Infrastructure Engineer focused on web systems, servers, networks, databases, and automation for real production-ready solutions.',
             quickLinks: 'Quick Links',
             connect: 'Let\'s Connect',
             location: 'Quito-Sangolquí, Ecuador',
@@ -1083,54 +1113,3 @@ if (document.readyState === 'loading') {
 } else {
     startApp();
 }
-
-// --- Inject Infrastructure & Cloud specialization card ---
-// Done via JS to ensure the card is always present regardless of HTML CRLF edits
-(function injectInfraCard() {
-    function inject() {
-        // Find the Seguridad card and add Infra card after it
-        const specRows = document.querySelectorAll('#skills .row.g-4');
-        if (!specRows.length) return;
-
-        // Target the specializations row (has col-lg-3 children)
-        let specRow = null;
-        for (const row of specRows) {
-            if (row.querySelector('.col-12.col-md-6.col-lg-3')) { specRow = row; break; }
-        }
-        if (!specRow) return;
-
-        // Avoid duplicate injection
-        if (specRow.querySelector('.infra-card-highlight')) return;
-
-        const col = document.createElement('div');
-        col.className = 'col-12 col-md-6 col-lg-3';
-        col.innerHTML = `
-            <div class="bg-white p-4 rounded shadow border h-100 infra-card-highlight">
-                <h4 class="h5 fw-semibold text-dark mb-3 d-flex align-items-center gap-2">
-                    <i data-lucide="server" style="color:#0078d4"></i>
-                    Infraestructura &amp; Cloud
-                </h4>
-                <div class="d-flex flex-wrap gap-2">
-                    <span class="badge rounded-pill azure-badge">Azure</span>
-                    <span class="badge bg-secondary text-dark rounded-pill">Linux</span>
-                    <span class="badge bg-secondary text-dark rounded-pill">Ubuntu Server</span>
-                    <span class="badge bg-secondary text-dark rounded-pill">Proxmox</span>
-                    <span class="badge bg-secondary text-dark rounded-pill">SSH</span>
-                    <span class="badge bg-secondary text-dark rounded-pill">Nginx</span>
-                    <span class="badge bg-secondary text-dark rounded-pill">VMs</span>
-                </div>
-            </div>`;
-        specRow.appendChild(col);
-
-        // Re-render Lucide icons for the new card
-        if (typeof lucide !== 'undefined' && lucide.createIcons) {
-            lucide.createIcons();
-        }
-    }
-
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', inject);
-    } else {
-        inject();
-    }
-})();
