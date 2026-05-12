@@ -27,8 +27,8 @@ const translations = {
         },
         hero: {
             title: 'Jairo Ruiz',
-            subtitle: 'Ingeniero de Soluciones Digitales | Full-Stack, Datos, BI y Automatización',
-            description: 'Integro desarrollo Full-Stack, ingeniería de datos, Power BI y automatización para construir soluciones end-to-end. Egresado de la carrera de TICs en la Universidad de las Fuerzas Armadas ESPE, enfocado en resultados medibles para negocio.',
+            subtitle: 'Full-Stack Developer | Servidores, Redes, Infraestructura y Cloud',
+            description: 'Construyo soluciones end-to-end combinando desarrollo web, APIs, servidores Linux, redes, virtualización e infraestructura local y en la nube. Egresado de TICs en la Universidad de las Fuerzas Armadas ESPE.',
             repos: 'Repositorios',
             contributions: 'Contribuciones',
             experience: 'Años Experiencia',
@@ -37,25 +37,26 @@ const translations = {
         },
         about: {
             title: 'Sobre Mí',
-            description1: 'Soy ingeniero de soluciones digitales, egresado de la carrera de TICs en la Universidad de las Fuerzas Armadas ESPE. Combino desarrollo Full-Stack, datos, BI y automatización en productos listos para producción.',
-            description2: 'Trabajo con Python y Power BI como parte de soluciones integrales: desde captura y procesamiento de datos, hasta visualización ejecutiva y automatización de decisiones operativas.',
-            description3: 'Diseño arquitecturas end-to-end con TypeScript, JavaScript, APIs y microservicios para entregar plataformas mantenibles, seguras y de alto rendimiento.',
+            description1: 'Soy Full-Stack Developer y egresado de TICs en la Universidad de las Fuerzas Armadas ESPE.',
+            description2: 'Mi enfoque real está en construir plataformas completas: frontend, backend, APIs, bases de datos, servidores Linux/Ubuntu, redes, Proxmox y despliegues en cloud.',
+            description3: 'Me gusta conectar software e infraestructura para que una solución no solo se vea bien, sino que funcione estable, segura y lista para crecer.',
             'highlights-fullstack': 'Full-Stack',
-            'highlights-dataAnalysis': 'Data & BI',
-            'highlights-microservices': 'Automatización',
-            'highlights-security': 'Arquitectura'
+            'highlights-dataAnalysis': 'Servidores',
+            'highlights-microservices': 'Redes',
+            'highlights-security': 'Arquitectura',
+            'highlights-infra': 'Infra Local & Cloud'
         },
         services: {
             title: 'Servicios Profesionales',
-            description: 'Acompaño proyectos de punta a punta: desde diseño técnico y desarrollo, hasta datos, BI, automatización y operación.',
+            description: 'Acompaño proyectos de punta a punta: desarrollo Full-Stack, servidores, redes, infraestructura local, cloud y operación.',
             items: {
                 fullstack: {
                     title: 'Desarrollo Full-Stack End-to-End',
                     description: 'Construcción de aplicaciones web robustas con frontend, backend, APIs, autenticación y despliegue.'
                 },
                 data: {
-                    title: 'Data & BI Operativo',
-                    description: 'Modelado y procesamiento de datos, tableros Power BI y KPIs ejecutivos conectados a la operación.'
+                    title: 'Servidores y Redes',
+                    description: 'Administración de entornos Linux/Ubuntu, redes locales, servicios, accesos y continuidad operativa.'
                 },
                 automation: {
                     title: 'Automatización e Integraciones',
@@ -64,6 +65,10 @@ const translations = {
                 optimization: {
                     title: 'Optimización y Escalado',
                     description: 'Mejora de rendimiento, SEO técnico, estabilidad y arquitectura para crecimiento sostenible.'
+                },
+                infra: {
+                    title: 'Infraestructura & Cloud',
+                    description: 'Configuración de infraestructura local, virtualización con Proxmox y despliegue de servicios en Azure y entornos cloud.'
                 }
             }
         },
@@ -173,12 +178,13 @@ const translations = {
             specializationsTitle: 'Especializaciones',
             evidence: {
                 title: 'Evidencia Técnica por Entregables',
-                powerbi: 'Dashboards ejecutivos para KPIs comerciales y operativos con lectura accionable.',
+                powerbi: 'Administración de servidores, redes locales, accesos, servicios y continuidad operativa.',
                 python: 'APIs, lógica de negocio y automatizaciones aplicadas a procesos reales.',
                 typescript: 'Aplicaciones CRUD y módulos reutilizables con enfoque de mantenibilidad.',
                 architecture: 'Diseño de soluciones con microservicios, contratos API e integración de sistemas.',
                 automation: 'Flujos automáticos y web scraping para reducir tareas manuales y acelerar decisiones.',
-                delivery: 'Participación de extremo a extremo: levantamiento, desarrollo, despliegue y mejora continua.'
+                delivery: 'Participación de extremo a extremo: levantamiento, desarrollo, despliegue y mejora continua.',
+                infra: 'Administración de servidores Linux/Ubuntu, redes, virtualización con Proxmox y despliegue de servicios en Azure.'
             }
         },
         certifications: {
@@ -188,9 +194,9 @@ const translations = {
                 'engineering-title': 'Egresado en TICs',
                 'engineering-issuer': 'Universidad de las Fuerzas Armadas ESPE',
                 'engineering-description': 'Egresado de la carrera de Tecnologías de la Información con enfoque en desarrollo de software, arquitectura y analítica de datos.',
-                'powerbi-title': 'Power BI Specialist',
-                'powerbi-issuer': 'Microsoft Certified',
-                'powerbi-description': 'Certificación oficial en Power BI para desarrollo de dashboards empresariales y análisis avanzado de datos.',
+                'powerbi-title': 'Infraestructura Local y Cloud',
+                'powerbi-issuer': 'Servidores, redes y cloud',
+                'powerbi-description': 'Administración de servidores Linux/Ubuntu, redes locales, virtualización con Proxmox y despliegue de servicios en Azure.',
                 'python-title': 'Python Data Analyst',
                 'python-issuer': 'Python Institute',
                 'python-description': 'Certificación en análisis de datos con Python, incluyendo pandas, numpy, matplotlib y machine learning básico.',
@@ -216,7 +222,7 @@ const translations = {
             }
         },
         footer: {
-            description: 'Ingeniero de soluciones digitales end-to-end: desarrollo Full-Stack, datos, BI y automatización para crear productos con calidad técnica y resultados de negocio.',
+            description: 'Full-Stack Developer con enfoque en servidores, redes, infraestructura local y cloud para crear soluciones estables, mantenibles y listas para operación.',
             quickLinks: 'Enlaces Rápidos',
             connect: 'Conectemos',
             location: 'Quito-Sangolquí, Ecuador',
@@ -240,8 +246,8 @@ const translations = {
         },
         hero: {
             title: 'Jairo Ruiz',
-            subtitle: 'Digital Solutions Engineer | Full-Stack, Data, BI & Automation',
-            description: 'I integrate Full-Stack development, data engineering, Power BI, and automation to build end-to-end solutions. ICT graduate from the Armed Forces University ESPE, focused on measurable business outcomes.',
+            subtitle: 'Full-Stack Developer | Servers, Networks, Infrastructure & Cloud',
+            description: 'I build end-to-end solutions by combining web development, APIs, Linux servers, networks, virtualization, and local/cloud infrastructure. ICT graduate from the Armed Forces University ESPE.',
             repos: 'Repositories',
             contributions: 'Contributions',
             experience: 'Years Experience',
@@ -250,25 +256,26 @@ const translations = {
         },
         about: {
             title: 'About Me',
-            description1: 'I am a digital solutions engineer and ICT graduate from the Armed Forces University ESPE. I combine Full-Stack development, data, BI, and automation in production-ready products.',
-            description2: 'I use Python and Power BI as part of integrated solutions, from data capture and processing to executive dashboards and automated operational decisions.',
-            description3: 'I design end-to-end architectures with TypeScript, JavaScript, APIs, and microservices to deliver maintainable, secure, high-performance platforms.',
+            description1: 'I am a Full-Stack Developer and ICT graduate from the Armed Forces University ESPE.',
+            description2: 'My real focus is building complete platforms: frontend, backend, APIs, databases, Linux/Ubuntu servers, networks, Proxmox, and cloud deployments.',
+            description3: 'I connect software and infrastructure so solutions look polished and also run stable, secure, and ready to scale.',
             'highlights-fullstack': 'Full-Stack',
-            'highlights-dataAnalysis': 'Data & BI',
-            'highlights-microservices': 'Automation',
-            'highlights-security': 'Architecture'
+            'highlights-dataAnalysis': 'Servers',
+            'highlights-microservices': 'Networks',
+            'highlights-security': 'Architecture',
+            'highlights-infra': 'Local Infra & Cloud'
         },
         services: {
             title: 'Professional Services',
-            description: 'I support projects end-to-end: from technical design and development to data, BI, automation, and operations.',
+            description: 'I support projects end-to-end: Full-Stack development, servers, networks, local infrastructure, cloud, and operations.',
             items: {
                 fullstack: {
                     title: 'End-to-End Full-Stack Development',
                     description: 'Robust web applications with frontend, backend, APIs, authentication, and deployment.'
                 },
                 data: {
-                    title: 'Operational Data & BI',
-                    description: 'Data modeling and processing, Power BI dashboards, and executive KPIs connected to operations.'
+                    title: 'Servers and Networks',
+                    description: 'Linux/Ubuntu administration, local networks, services, access management, and operational continuity.'
                 },
                 automation: {
                     title: 'Automation & Integrations',
@@ -277,6 +284,10 @@ const translations = {
                 optimization: {
                     title: 'Optimization & Scaling',
                     description: 'Performance, technical SEO, stability, and architecture improvements for sustainable growth.'
+                },
+                infra: {
+                    title: 'Infrastructure & Cloud',
+                    description: 'Local infrastructure setup, Proxmox virtualization, and service deployments on Azure and cloud environments.'
                 }
             }
         },
@@ -386,12 +397,13 @@ const translations = {
             specializationsTitle: 'Specializations',
             evidence: {
                 title: 'Technical Evidence by Deliverables',
-                powerbi: 'Executive dashboards for commercial and operational KPIs with actionable insights.',
+                powerbi: 'Server administration, local networks, access management, services, and operational continuity.',
                 python: 'APIs, business logic, and automation applied to real workflows.',
                 typescript: 'CRUD applications and reusable modules with maintainability-focused architecture.',
                 architecture: 'Solution design with microservices, API contracts, and systems integration.',
                 automation: 'Automated flows and web scraping to reduce manual effort and speed up decisions.',
-                delivery: 'End-to-end ownership: discovery, development, deployment, and continuous improvement.'
+                delivery: 'End-to-end ownership: discovery, development, deployment, and continuous improvement.',
+                infra: 'Linux/Ubuntu server administration, networks, Proxmox virtualization, and Azure cloud service deployment.'
             }
         },
         certifications: {
@@ -401,9 +413,9 @@ const translations = {
                 'engineering-title': 'ICT Graduate',
                 'engineering-issuer': 'Armed Forces University ESPE',
                 'engineering-description': 'Graduate in Information and Communication Technologies focused on software development, architecture, and data analytics.',
-                'powerbi-title': 'Power BI Specialist',
-                'powerbi-issuer': 'Microsoft Certified',
-                'powerbi-description': 'Official certification in Power BI for development of business dashboards and advanced data analysis.',
+                'powerbi-title': 'Local and Cloud Infrastructure',
+                'powerbi-issuer': 'Servers, networks, and cloud',
+                'powerbi-description': 'Linux/Ubuntu server administration, local networks, Proxmox virtualization, and Azure cloud service deployment.',
                 'python-title': 'Python Data Analyst',
                 'python-issuer': 'Python Institute',
                 'python-description': 'Certification in data analysis with Python, including pandas, numpy, matplotlib and basic machine learning.',
@@ -429,7 +441,7 @@ const translations = {
             }
         },
         footer: {
-            description: 'End-to-end digital solutions engineer: Full-Stack development, data, BI, and automation focused on technical quality and business impact.',
+            description: 'Full-Stack Developer focused on servers, networks, local infrastructure, and cloud for stable, maintainable, operation-ready solutions.',
             quickLinks: 'Quick Links',
             connect: 'Let\'s Connect',
             location: 'Quito-Sangolquí, Ecuador',
@@ -940,7 +952,6 @@ function initAll() {
     initStatCounters();
     initSkillBars();
     initScrollReveal();
-    initAnimatedCounters();
 
     // Language toggle listeners
     const langToggle = document.getElementById('language-toggle');
@@ -1072,3 +1083,54 @@ if (document.readyState === 'loading') {
 } else {
     startApp();
 }
+
+// --- Inject Infrastructure & Cloud specialization card ---
+// Done via JS to ensure the card is always present regardless of HTML CRLF edits
+(function injectInfraCard() {
+    function inject() {
+        // Find the Seguridad card and add Infra card after it
+        const specRows = document.querySelectorAll('#skills .row.g-4');
+        if (!specRows.length) return;
+
+        // Target the specializations row (has col-lg-3 children)
+        let specRow = null;
+        for (const row of specRows) {
+            if (row.querySelector('.col-12.col-md-6.col-lg-3')) { specRow = row; break; }
+        }
+        if (!specRow) return;
+
+        // Avoid duplicate injection
+        if (specRow.querySelector('.infra-card-highlight')) return;
+
+        const col = document.createElement('div');
+        col.className = 'col-12 col-md-6 col-lg-3';
+        col.innerHTML = `
+            <div class="bg-white p-4 rounded shadow border h-100 infra-card-highlight">
+                <h4 class="h5 fw-semibold text-dark mb-3 d-flex align-items-center gap-2">
+                    <i data-lucide="server" style="color:#0078d4"></i>
+                    Infraestructura &amp; Cloud
+                </h4>
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge rounded-pill azure-badge">Azure</span>
+                    <span class="badge bg-secondary text-dark rounded-pill">Linux</span>
+                    <span class="badge bg-secondary text-dark rounded-pill">Ubuntu Server</span>
+                    <span class="badge bg-secondary text-dark rounded-pill">Proxmox</span>
+                    <span class="badge bg-secondary text-dark rounded-pill">SSH</span>
+                    <span class="badge bg-secondary text-dark rounded-pill">Nginx</span>
+                    <span class="badge bg-secondary text-dark rounded-pill">VMs</span>
+                </div>
+            </div>`;
+        specRow.appendChild(col);
+
+        // Re-render Lucide icons for the new card
+        if (typeof lucide !== 'undefined' && lucide.createIcons) {
+            lucide.createIcons();
+        }
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', inject);
+    } else {
+        inject();
+    }
+})();
