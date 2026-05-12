@@ -1787,42 +1787,6 @@ footer a:hover {
   }
 }
 
-/* ===== Section Dividers ===== */
-.section-divider {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0;
-  gap: 20px;
-}
-
-.divider-line {
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
-  flex: 1;
-  max-width: 200px;
-  border-radius: 1px;
-}
-
-.divider-circle {
-  width: 12px;
-  height: 12px;
-  background: var(--primary-color);
-  border-radius: 50%;
-  box-shadow: 0 0 10px rgba(30, 41, 59, 0.3);
-  flex-shrink: 0;
-}
-
-/* Dark mode section dividers */
-body.dark-mode .divider-line {
-  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
-}
-
-body.dark-mode .divider-circle {
-  background: var(--accent-color);
-  box-shadow: 0 0 10px rgba(20, 184, 166, 0.5);
-}
-
 /* ===== Theme Stabilization (Light/Dark + Desktop) ===== */
 body {
   background-color: var(--white);
@@ -1911,9 +1875,6 @@ body.modal-open .mobile-icon-nav {
   }
 }
 
-/* ===== Infrastructure & Cloud - New Section Styles ===== */
-
-/* Azure brand badge */
 .azure-badge {
   background: #0078d4;
   color: #fff;
@@ -1925,39 +1886,6 @@ body.modal-open .mobile-icon-nav {
   background: #005fa3;
   color: #fff;
 }
-
-/* Infra card accent border (top) */
-.infra-card-highlight {
-  border-top: 3px solid #0078d4 !important;
-  position: relative;
-  overflow: hidden;
-}
-
-.infra-card-highlight::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 3px;
-  background: linear-gradient(90deg, #0078d4, #50e6ff, #0078d4);
-  animation: azure-scan 3s ease-in-out infinite;
-}
-
-@keyframes azure-scan {
-  0%   { left: -100%; }
-  50%  { left: 100%; }
-  100% { left: 100%; }
-}
-
-
-/* ================================================================
-   🌤️ SKY BLUE REDESIGN — v3
-   Paleta: Navy profundo + Sky Blue (#0ea5e9) + Blanco
-   Estética: limpia, moderna, premium — azul cielo puro.
-   ================================================================ */
-
-/* ── NUEVAS VARIABLES SKY BLUE ── */
 :root {
   --sky-400: #38bdf8;
   --sky-500: #0ea5e9;   /* acento principal */
@@ -1977,7 +1905,6 @@ body.modal-open .mobile-icon-nav {
   --accent-color: #0ea5e9;
 }
 
-/* ── HERO — NAVY + SKY BLUE GLOW ── */
 .hero {
   background:
     radial-gradient(ellipse at 75% 20%, rgba(14,165,233,0.25) 0%, transparent 55%),
@@ -1986,7 +1913,6 @@ body.modal-open .mobile-icon-nav {
   background-attachment: fixed;
 }
 
-/* Blob 1 — sky blue orb arriba derecha */
 .hero::after {
   content: '';
   position: absolute;
@@ -2007,7 +1933,6 @@ body.modal-open .mobile-icon-nav {
   100% { transform: translate(15px, -15px) scale(0.96); }
 }
 
-/* Blob 2 — azul más claro abajo izquierda */
 .hero-content::before {
   content: '';
   position: absolute;
@@ -2027,7 +1952,6 @@ body.modal-open .mobile-icon-nav {
   z-index: 1;
 }
 
-/* ── HERO H1 — GRADIENTE BLANCO → SKY ── */
 .hero h1 {
   background: linear-gradient(120deg, #ffffff 0%, #bae6fd 55%, #7dd3fc 100%);
   -webkit-background-clip: text;
@@ -2036,7 +1960,6 @@ body.modal-open .mobile-icon-nav {
   filter: drop-shadow(0 2px 14px rgba(14,165,233,0.35));
 }
 
-/* ── STAT CARDS — GLASSMORPHISM SKY ── */
 .stat-card {
   background: rgba(255, 255, 255, 0.08);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -2076,7 +1999,6 @@ body.modal-open .mobile-icon-nav {
   font-size: 2.25rem;
 }
 
-/* ── BOTONES HERO ── */
 .hero .btn-primary {
   background: var(--grad-sky);
   border: none;
@@ -2108,7 +2030,6 @@ body.modal-open .mobile-icon-nav {
   transform: translateY(-2px);
 }
 
-/* ── TÍTULOS DE SECCIÓN — SKY GRADIENT ── */
 .display-4.fw-bold,
 .display-5.fw-bold {
   background: linear-gradient(120deg, #0c2d4e 0%, #0ea5e9 100%);
@@ -2125,7 +2046,6 @@ body.dark-mode .display-5.fw-bold {
   background-clip: text;
 }
 
-/* ── NAVBAR — FROSTED GLASS SKY ── */
 .navbar {
   transition: background 0.35s ease, backdrop-filter 0.35s ease, box-shadow 0.35s ease;
 }
@@ -2145,14 +2065,12 @@ body.dark-mode .navbar.scrolled {
   border-bottom: 1px solid rgba(14,165,233,0.2) !important;
 }
 
-/* Nav link active/hover — sky underline */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
   color: var(--sky-600) !important;
   background-color: var(--sky-50) !important;
 }
 
-/* ── TIMELINE — DOTS SKY ── */
 .timeline-dot,
 .timeline-icon {
   position: relative;
@@ -2173,7 +2091,6 @@ body.dark-mode .navbar.scrolled {
   50%       { transform: scale(1.6); opacity: 0; }
 }
 
-/* ── CARDS DE SERVICIOS — SKY TOP BORDER ── */
 #services .rounded-4 {
   border-top: 3px solid #0ea5e9 !important;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -2184,7 +2101,6 @@ body.dark-mode .navbar.scrolled {
   box-shadow: 0 18px 36px -8px rgba(14,165,233,0.22) !important;
 }
 
-/* ── SECCIÓN SKILLS — DOT GRID SKY ── */
 #skills {
   background-image:
     radial-gradient(circle at 5% 5%,   rgba(14,165,233,0.07) 0%, transparent 40%),
@@ -2193,7 +2109,6 @@ body.dark-mode .navbar.scrolled {
   background-size: auto, auto, 28px 28px;
 }
 
-/* ── BARRAS DE SKILL — SKY GRADIENT ── */
 .skill-bar .progress-bar {
   background: var(--grad-sky) !important;
   border-radius: 50px;
@@ -2215,7 +2130,6 @@ body.dark-mode .navbar.scrolled {
   100% { background-position: 200% 0; }
 }
 
-/* ── SPECIALIZATION CARDS — SKY ICON GLOW ── */
 .bg-white.p-4.rounded.shadow.border:hover {
   transform: translateY(-5px);
   box-shadow: 0 14px 32px -6px rgba(14,165,233,0.22) !important;
@@ -2227,7 +2141,6 @@ body.dark-mode .navbar.scrolled {
   transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-/* ── BADGES — SKY PILL ── */
 .badge.rounded-pill {
   transition: transform 0.18s ease, box-shadow 0.18s ease;
   cursor: default;
@@ -2238,9 +2151,6 @@ body.dark-mode .navbar.scrolled {
   box-shadow: 0 4px 12px rgba(14,165,233,0.25);
 }
 
-/* Azure badge ya definido, se mantiene */
-
-/* ── FORMULARIO — SKY FOCUS RING ── */
 .form-control:focus,
 .form-select:focus,
 textarea:focus {
@@ -2249,14 +2159,12 @@ textarea:focus {
   outline: none;
 }
 
-/* ── ABOUT — FONDO SKY SUAVE ── */
 #about {
   background-image:
     radial-gradient(ellipse at top left,    rgba(14,165,233,0.06) 0%, transparent 50%),
     radial-gradient(ellipse at bottom right, rgba(56,189,248,0.05) 0%, transparent 50%);
 }
 
-/* Highlights del about — sky hover */
 .d-flex.align-items-center.gap-3.p-3.bg-light.rounded-3.border {
   transition: background 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease;
 }
@@ -2267,7 +2175,6 @@ textarea:focus {
   transform: translateY(-2px);
 }
 
-/* ── AVATAR — SKY RING + GLOW ── */
 .hero-avatar {
   box-shadow:
     0 0 0 4px rgba(255,255,255,0.92),
@@ -2284,26 +2191,10 @@ textarea:focus {
     0 24px 48px rgba(0,0,0,0.45) !important;
 }
 
-/* ── SECTION DIVIDERS — SKY ── */
-.section-divider .divider-line {
-  background: linear-gradient(90deg, transparent, #0ea5e9, transparent) !important;
+.site-footer {
+  border-top: 0;
 }
 
-.section-divider .divider-circle {
-  border-color: #0ea5e9 !important;
-  box-shadow: 0 0 14px rgba(14,165,233,0.55);
-}
-
-/* ── FOOTER — SKY SEPARATOR ── */
-footer::before {
-  content: '';
-  display: block;
-  height: 3px;
-  background: var(--grad-sky);
-  margin-bottom: 0;
-}
-
-/* ── SCROLL TO TOP — SKY ── */
 #scroll-to-top {
   background: var(--grad-sky) !important;
   box-shadow: 0 4px 18px rgba(14,165,233,0.55) !important;
@@ -2316,7 +2207,6 @@ footer::before {
   box-shadow: 0 8px 28px rgba(14,165,233,0.75) !important;
 }
 
-/* ── TIMELINE CONTENT — SKY LEFT BORDER ── */
 .timeline-content {
   border-left: 3px solid rgba(14,165,233,0.35);
   transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
@@ -2328,7 +2218,6 @@ footer::before {
   transform: translateX(3px);
 }
 
-/* ── SKILL CHIP — SKY ACCENT ── */
 .skill-chip {
   border-left: 3px solid transparent;
   transition: border-color 0.2s ease, background 0.2s ease;
@@ -2339,25 +2228,21 @@ footer::before {
   background: var(--sky-50);
 }
 
-/* ── BADGES DE EXPERIENCIA — SKY ── */
 .timeline-content .badge.bg-primary {
   background: var(--grad-sky) !important;
   border: none;
 }
 
-/* ── EVIDENCE CARDS — SKY HOVER ── */
 .bg-white.rounded-4.p-4.shadow-sm.border:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 28px -4px rgba(14,165,233,0.2) !important;
 }
 
-/* ── CERTIFICATION CARDS ── */
 .bg-white.rounded.p-4.shadow.border.h-100.position-relative:hover {
   box-shadow: 0 18px 40px -8px rgba(14,165,233,0.28) !important;
   transform: translateY(-4px);
 }
 
-/* ── LUCIDE ICONS — SKY ── */
 [data-lucide="bar-chart-3"] { color: #0ea5e9 !important; }
 [data-lucide="code"]        { color: #0369a1 !important; }
 [data-lucide="network"]     { color: #38bdf8 !important; }
@@ -2365,7 +2250,6 @@ footer::before {
 [data-lucide="shield-check"]{ color: #0ea5e9 !important; }
 [data-lucide="message-circle"] { color: #059669 !important; }
 
-/* ── DARK MODE — NAVY + SKY ── */
 body.dark-mode .bg-white {
   background: rgba(10, 22, 40, 0.96) !important;
   border-color: rgba(14,165,233,0.15) !important;
@@ -2396,21 +2280,6 @@ body.dark-mode .navbar-nav .nav-link.active {
   background-color: rgba(14,165,233,0.12) !important;
 }
 
-body.dark-mode .infra-card-highlight {
-  background: rgba(14,165,233,0.07) !important;
-  border-color: rgba(56,189,248,0.25) !important;
-}
-
-/* ── INFRA CARD — ACTUALIZADO A SKY ── */
-.infra-card-highlight {
-  border-top: 3px solid #0ea5e9 !important;
-}
-
-.infra-card-highlight::before {
-  background: linear-gradient(90deg, #0ea5e9, #bae6fd, #0ea5e9);
-}
-
-/* ── ANIMACIÓN REVEAL — SUAVE ── */
 @keyframes fade-up-in {
   from { opacity: 0; transform: translateY(36px) scale(0.98); }
   to   { opacity: 1; transform: translateY(0)    scale(1); }
@@ -2420,7 +2289,6 @@ body.dark-mode .infra-card-highlight {
   animation: fade-up-in 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
 }
 
-/* ── SERVICIOS — CARD HOVER ── */
 .rounded-4.border.shadow-sm {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -2489,11 +2357,6 @@ body.dark-mode #about .bg-light,
 body.dark-mode #about .d-flex.align-items-center.gap-3.p-3.bg-light.rounded-3.border {
   background: rgba(15, 23, 42, 0.92) !important;
   border-color: rgba(56, 189, 248, 0.28) !important;
-}
-
-.infra-card-highlight,
-.bg-white.p-4.rounded.shadow.border.h-100.infra-card-highlight {
-  overflow-wrap: anywhere;
 }
 
 .hero::after,
