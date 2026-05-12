@@ -27,8 +27,8 @@ const translations = {
         },
         hero: {
             title: 'Jairo Ruiz',
-            subtitle: 'Full-Stack Developer | Servidores, Redes, Infraestructura y Cloud',
-            description: 'Construyo soluciones end-to-end combinando desarrollo web, APIs, servidores Linux, redes, virtualización e infraestructura local y en la nube. Egresado de TICs en la Universidad de las Fuerzas Armadas ESPE.',
+            subtitle: 'Full-Stack Developer | Infraestructura, Cloud, Redes y Automatización',
+            description: 'Construyo soluciones end-to-end combinando desarrollo web, APIs, servidores Linux, redes, virtualización, cloud y automatizaciones con n8n para conectar procesos reales. Egresado de TICs en la Universidad de las Fuerzas Armadas ESPE.',
             repos: 'Repositorios',
             contributions: 'Contribuciones',
             experience: 'Años Experiencia',
@@ -38,17 +38,17 @@ const translations = {
         about: {
             title: 'Sobre Mí',
             description1: 'Soy Full-Stack Developer y egresado de TICs en la Universidad de las Fuerzas Armadas ESPE.',
-            description2: 'Mi enfoque real está en construir plataformas completas: frontend, backend, APIs, bases de datos, servidores Linux/Ubuntu, redes, Proxmox y despliegues en cloud.',
-            description3: 'Me gusta conectar software e infraestructura para que una solución no solo se vea bien, sino que funcione estable, segura y lista para crecer.',
+            description2: 'Mi enfoque real está en construir plataformas completas: frontend, backend, APIs, bases de datos, servidores Linux/Ubuntu, redes, Proxmox, cloud y automatizaciones con n8n.',
+            description3: 'Me gusta conectar software, infraestructura y procesos: desde una interfaz web hasta workflows, webhooks e integraciones que reducen trabajo manual y aceleran operaciones.',
             'highlights-fullstack': 'Full-Stack',
             'highlights-dataAnalysis': 'Servidores',
             'highlights-microservices': 'Redes',
             'highlights-security': 'Arquitectura',
-            'highlights-infra': 'Infra Local & Cloud'
+            'highlights-infra': 'n8n & Cloud'
         },
         services: {
             title: 'Servicios Profesionales',
-            description: 'Acompaño proyectos de punta a punta: desarrollo Full-Stack, servidores, redes, infraestructura local, cloud y operación.',
+            description: 'Acompaño proyectos de punta a punta: desarrollo Full-Stack, servidores, redes, infraestructura local, cloud, n8n, integraciones y operación.',
             items: {
                 fullstack: {
                     title: 'Desarrollo Full-Stack End-to-End',
@@ -60,7 +60,7 @@ const translations = {
                 },
                 automation: {
                     title: 'Automatización e Integraciones',
-                    description: 'Integración entre sistemas, flujos automáticos y procesos de web scraping para acelerar decisiones.'
+                    description: 'Workflows en n8n, webhooks, APIs, scraping e integraciones entre herramientas para eliminar tareas repetitivas y acelerar decisiones.'
                 },
                 optimization: {
                     title: 'Optimización y Escalado',
@@ -68,7 +68,7 @@ const translations = {
                 },
                 infra: {
                     title: 'Infraestructura & Cloud',
-                    description: 'Configuración de infraestructura local, virtualización con Proxmox y despliegue de servicios en Azure y entornos cloud.'
+                    description: 'Configuración de infraestructura local, virtualización con Proxmox, despliegue de servicios en Azure y automatización de tareas operativas.'
                 }
             }
         },
@@ -182,7 +182,7 @@ const translations = {
                 python: 'APIs, lógica de negocio y automatizaciones aplicadas a procesos reales.',
                 typescript: 'Aplicaciones CRUD y módulos reutilizables con enfoque de mantenibilidad.',
                 architecture: 'Diseño de soluciones con microservicios, contratos API e integración de sistemas.',
-                automation: 'Flujos automáticos y web scraping para reducir tareas manuales y acelerar decisiones.',
+                automation: 'Workflows con n8n, webhooks, scraping e integraciones para reducir trabajo manual y conectar sistemas.',
                 delivery: 'Participación de extremo a extremo: levantamiento, desarrollo, despliegue y mejora continua.',
                 infra: 'Administración de servidores Linux/Ubuntu, redes, virtualización con Proxmox y despliegue de servicios en Azure.'
             }
@@ -222,7 +222,7 @@ const translations = {
             }
         },
         footer: {
-            description: 'Full-Stack Developer con enfoque en servidores, redes, infraestructura local y cloud para crear soluciones estables, mantenibles y listas para operación.',
+            description: 'Full-Stack Developer con enfoque en servidores, redes, infraestructura local, cloud y automatización con n8n para crear soluciones estables, mantenibles y listas para operar.',
             quickLinks: 'Enlaces Rápidos',
             connect: 'Conectemos',
             location: 'Quito-Sangolquí, Ecuador',
@@ -246,8 +246,8 @@ const translations = {
         },
         hero: {
             title: 'Jairo Ruiz',
-            subtitle: 'Full-Stack Developer | Servers, Networks, Infrastructure & Cloud',
-            description: 'I build end-to-end solutions by combining web development, APIs, Linux servers, networks, virtualization, and local/cloud infrastructure. ICT graduate from the Armed Forces University ESPE.',
+            subtitle: 'Full-Stack Developer | Infrastructure, Cloud, Networks & Automation',
+            description: 'I build end-to-end solutions by combining web development, APIs, Linux servers, networks, virtualization, cloud, and n8n automations to connect real operational processes. ICT graduate from the Armed Forces University ESPE.',
             repos: 'Repositories',
             contributions: 'Contributions',
             experience: 'Years Experience',
@@ -257,17 +257,17 @@ const translations = {
         about: {
             title: 'About Me',
             description1: 'I am a Full-Stack Developer and ICT graduate from the Armed Forces University ESPE.',
-            description2: 'My real focus is building complete platforms: frontend, backend, APIs, databases, Linux/Ubuntu servers, networks, Proxmox, and cloud deployments.',
-            description3: 'I connect software and infrastructure so solutions look polished and also run stable, secure, and ready to scale.',
+            description2: 'My real focus is building complete platforms: frontend, backend, APIs, databases, Linux/Ubuntu servers, networks, Proxmox, cloud, and n8n automations.',
+            description3: 'I connect software, infrastructure, and processes: from web interfaces to workflows, webhooks, and integrations that reduce manual work and accelerate operations.',
             'highlights-fullstack': 'Full-Stack',
             'highlights-dataAnalysis': 'Servers',
             'highlights-microservices': 'Networks',
             'highlights-security': 'Architecture',
-            'highlights-infra': 'Local Infra & Cloud'
+            'highlights-infra': 'n8n & Cloud'
         },
         services: {
             title: 'Professional Services',
-            description: 'I support projects end-to-end: Full-Stack development, servers, networks, local infrastructure, cloud, and operations.',
+            description: 'I support projects end-to-end: Full-Stack development, servers, networks, local infrastructure, cloud, n8n, integrations, and operations.',
             items: {
                 fullstack: {
                     title: 'End-to-End Full-Stack Development',
@@ -279,7 +279,7 @@ const translations = {
                 },
                 automation: {
                     title: 'Automation & Integrations',
-                    description: 'System integrations, automated workflows, and web scraping processes to accelerate decisions.'
+                    description: 'n8n workflows, webhooks, APIs, scraping, and tool integrations to remove repetitive work and accelerate decisions.'
                 },
                 optimization: {
                     title: 'Optimization & Scaling',
@@ -287,7 +287,7 @@ const translations = {
                 },
                 infra: {
                     title: 'Infrastructure & Cloud',
-                    description: 'Local infrastructure setup, Proxmox virtualization, and service deployments on Azure and cloud environments.'
+                    description: 'Local infrastructure setup, Proxmox virtualization, Azure service deployment, and operational task automation.'
                 }
             }
         },
@@ -401,7 +401,7 @@ const translations = {
                 python: 'APIs, business logic, and automation applied to real workflows.',
                 typescript: 'CRUD applications and reusable modules with maintainability-focused architecture.',
                 architecture: 'Solution design with microservices, API contracts, and systems integration.',
-                automation: 'Automated flows and web scraping to reduce manual effort and speed up decisions.',
+                automation: 'n8n workflows, webhooks, scraping, and integrations to reduce manual work and connect systems.',
                 delivery: 'End-to-end ownership: discovery, development, deployment, and continuous improvement.',
                 infra: 'Linux/Ubuntu server administration, networks, Proxmox virtualization, and Azure cloud service deployment.'
             }
@@ -441,7 +441,7 @@ const translations = {
             }
         },
         footer: {
-            description: 'Full-Stack Developer focused on servers, networks, local infrastructure, and cloud for stable, maintainable, operation-ready solutions.',
+            description: 'Full-Stack Developer focused on servers, networks, local infrastructure, cloud, and n8n automation for stable, maintainable, operation-ready solutions.',
             quickLinks: 'Quick Links',
             connect: 'Let\'s Connect',
             location: 'Quito-Sangolquí, Ecuador',

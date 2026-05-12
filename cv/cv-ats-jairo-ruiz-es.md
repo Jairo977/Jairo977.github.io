@@ -3,13 +3,13 @@ Quito-Sangolquí, Ecuador | +593 96 004 7635 | jwruiz@espe.edu.ec
 LinkedIn: https://www.linkedin.com/in/jairo-ruiz-9870932a4 | GitHub: https://github.com/Jairo977 | Portafolio: https://jairo977.github.io/
 
 ## Perfil Profesional
-Full-Stack Developer con enfoque end-to-end en desarrollo web, servidores, redes e infraestructura local y cloud. Egresado de Tecnologías de la Información (ESPE), orientado a construir plataformas robustas que conectan software, operación e infraestructura.
+Full-Stack Developer con enfoque end-to-end en desarrollo web, servidores, redes, infraestructura local/cloud y automatización con n8n. Egresado de Tecnologías de la Información (ESPE), orientado a construir plataformas robustas que conectan software, operación, infraestructura e integraciones entre sistemas.
 
 ## Competencias Clave
 - Desarrollo Full-Stack: TypeScript, JavaScript, Python, APIs REST, arquitectura modular.
 - Servidores e Infraestructura: Linux/Ubuntu Server, Proxmox, Nginx, despliegue de servicios y administración básica cloud.
 - Redes y Operación: cableado estructurado, configuración de equipos, servicios locales y soporte técnico.
-- Automatización y Datos: web scraping, flujos de integración, reportes operativos y reducción de tareas manuales.
+- Automatización e Integraciones: n8n, webhooks, APIs, web scraping, reportes operativos y reducción de tareas manuales.
 
 ## Experiencia Profesional
 ### Desarrollador Full-Stack y Data Automation | Inversef - Subastas Judiciales
@@ -17,7 +17,7 @@ Full-Stack Developer con enfoque end-to-end en desarrollo web, servidores, redes
 - Diseñé e implementé módulos de búsqueda y filtros para exploración de remates judiciales.
 - Construí panel administrativo y flujo de gestión de oportunidades.
 - Implementé procesos de web scraping para consolidar información desde fuentes públicas.
-- Integré componentes web, backend e infraestructura para acelerar el análisis de casos.
+- Integré componentes web, backend, automatización e infraestructura para acelerar el análisis de casos.
 
 ### Desarrollador Web Full-Stack | NutriFamili - Plataforma de Nutrición
 2024 - Presente
@@ -36,7 +36,7 @@ abr 2025 - oct 2025
 ### Desarrollador Full-Stack | Proyectos Independientes
 2023 - Presente
 - Construcción de aplicaciones end-to-end con TypeScript, JavaScript y Python.
-- Implementación de CRUDs, automatizaciones, APIs y componentes reutilizables.
+- Implementación de CRUDs, automatizaciones con n8n, APIs, webhooks y componentes reutilizables.
 
 ## Proyectos Relevantes
 - Inversef - Subastas Judiciales: https://inversef-website.vercel.app/
@@ -49,6 +49,7 @@ Egresado en Tecnologías de la Información (TICs)
 Universidad de las Fuerzas Armadas ESPE (2021 - 2025)
 
 ## Formación Complementaria
+- Automatización e integraciones: n8n, webhooks, APIs, scraping
 - Infraestructura local y cloud: Linux/Ubuntu Server, Proxmox, Azure
 - Python Data Analyst (Python Institute)
 - TypeScript Developer (Meta/React)
